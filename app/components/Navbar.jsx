@@ -1,11 +1,10 @@
 'use client'
+
 import { useState } from 'react';
-import { getDictionary } from '../[lang]/dictionaries';
-
 import AnchorLink from 'react-anchor-link-smooth-scroll';
-
 import { MdSegment, MdClear } from "react-icons/md";
 import { FaHome, FaInfoCircle, FaCartPlus, FaHandsHelping, FaPhoneSquareAlt } from "react-icons/fa"
+import GetDictionary from '../utils/dictionaries';
 
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
@@ -21,9 +20,9 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
     )
 }
 
-const Navbar = async ({ selectedPage, setSelectedPage, home, about, products, contact, services, params: { lang } }) => {
+const Navbar =  ({ selectedPage, setSelectedPage, home, about, products, contact, services, lang }) => {
 
-    const dict = await getDictionary(lang) // en
+    const dict =  GetDictionary(lang) // en
 
     // Language Dropdown
     const options = ['English', 'Arabic'];
@@ -93,7 +92,7 @@ const Navbar = async ({ selectedPage, setSelectedPage, home, about, products, co
                     </div>
 
                     {/* Small screens */}
-                    <div className='hidden p-4 sm:flex md:hidden items-center justify-between gap-16'>
+                    <div className=' p-4 flex md:hidden items-center justify-between gap-16'>
                         <a href='/'><img className='w-12 lg:w-14' src="igi-main-logo.png" alt="Logo" /></a>
                         <select onChange={onOptionChangeHandler} className="bg-magic-potion px-2 h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                             {options.map((option, index) => {
