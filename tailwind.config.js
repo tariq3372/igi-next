@@ -5,12 +5,24 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  mode: 'jit',
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      colors: {
+        'magic-potion' : '#002049',
+        'toddy-gold' : '#c6880a',
+        'tulip-yellow' : '#e4b434',
+        'energy-yellow' : '#fad155',
+        'satin-linen' : '#e0d9cc',
+        'alabaster' : '#fafafa'
+
+      },
+      backgroundImage: (theme) => ({
+        "hero-image": "url(../public/hotel-bed-room.jpg)",
+      }),
+      fontFamily : {
+        montserrat: ["Montserrat", "serif"],
+        lato: "lato"
       },
     },
   },
