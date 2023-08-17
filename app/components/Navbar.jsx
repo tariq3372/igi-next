@@ -82,7 +82,7 @@ const Navbar =  ({ selectedPage, setSelectedPage, home, about, products, contact
                             {contact}
                         </AnchorLink>
 
-                        <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                        <select onChange={onOptionChangeHandler} className="bg-magic-potion px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                             {options.map((option, index) => {
                                 return <option className='py-2' key={index} >
                                     {option}
@@ -94,7 +94,7 @@ const Navbar =  ({ selectedPage, setSelectedPage, home, about, products, contact
                     {/* Small screens */}
                     <div className=' p-4 flex md:hidden items-center justify-between gap-16'>
                         <a href='/'><img className='w-12 lg:w-14' src="igi-main-logo.png" alt="Logo" /></a>
-                        <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                        <select onChange={onOptionChangeHandler} className="bg-magic-potion px-2 h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                             {options.map((option, index) => {
                                 return <option className='py-2' key={index} >
                                     {option}

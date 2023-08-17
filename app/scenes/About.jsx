@@ -1,5 +1,5 @@
 import React from 'react'
-import { m, LazyMotion, domAnimation } from "framer-motion"
+import { motion } from 'framer-motion';
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
 
@@ -8,18 +8,17 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
     // const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
 
     return (
-        <LazyMotion features={domAnimation}>
         <section
             id='about'
-            className='md:flex md:justify-between md:items-center md:h-full gap-16 py-0 lg:py-40 mx-5 lg:mx-20'
+            className='md:flex md:justify-between md:items-center md:h-full gap-16 py-0 lg:py-10 mx-5 lg:mx-20'
         >
             {/* About Section */}
-            <div className='order-1 lg:order-2 z-30 basis-4/5'>
-                <m.div
+            <div className='order-1 lg:order-2 z-30 basis-4/5 mt-8 md:mt-32'>
+                <motion.div
                     className=''
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true}}
+                    viewport={{ once: false}}
                     transition={{delay:0.1, duration: 0.3 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -36,12 +35,12 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     <p className='mt-5 mb-8 text-sm text-left md:text-start font-montserrat font-medium text-magic-potion'>
                         {aboutContent}
                     </p>
-                </m.div>
+                </motion.div>
 
-                <m.div className="mt-8 flex flex-wrap gap-4 text-center"
+                <motion.div className="mt-8 flex flex-wrap gap-4 text-center"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true}}
+                    viewport={{ once: false}}
                     transition={{delay:0.1, duration: 0.6 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -50,24 +49,24 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                 >
                     <a
                         href="#products"
-                        class="block w-full rounded-full bg-tulip-yellow px-12 py-3 text-sm font-medium text-white shadow hover:bg-mettalic-gold focus:outline-none focus:ring sm:w-auto"
+                        class="block w-full rounded-full bg-tulip-yellow px-12 py-3 text-sm font-medium text-white shadow hover:bg-mettalic-gold focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
                     >
                         {button03}
                     </a>
 
                     <a
                         href="#services"
-                        class="block w-full rounded-full bg-satin-linen px-12 py-3 text-sm font-bold text-magic-potion/80 border-2 border-magic-potion shadow hover:bg-magic-potion hover:border-tulip-yellow hover:text-tulip-yellow focus:outline-none focus:ring sm:w-auto"
+                        class="block w-full rounded-full bg-satin-linen px-12 py-3 text-sm font-bold text-magic-potion/80 border-2 border-magic-potion shadow hover:bg-magic-potion hover:border-tulip-yellow hover:text-tulip-yellow focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
                     >
                         {button02}
                     </a>
-                </m.div>
+                </motion.div>
 
-                <m.div 
+                <motion.div 
                     className=""
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: true, amount: 0.5 }}
+                    viewport={{ once: false, amount: 0.5 }}
                     transition={{delay:0.1, duration: 0.9 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -75,11 +74,11 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     }}
                 >
                     <SocialMediaIcons />
-                </m.div>
+                </motion.div>
             </div>
 
             {/* Image Section */}
-            <div>
+            
                 <div class="p-2.5 bg-magic-potion/20">
                     <div
                         class="overflow-hidden cursor-pointer rounded-sm relative group z-0 before:absolute before:w-full before:max-w-[500px] md:before:max-w-[800px]  before:h-full"
@@ -91,9 +90,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                         />
                     </div>
                 </div>
-            </div>
         </section>
-        </LazyMotion>
     )
 }
 
