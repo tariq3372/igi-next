@@ -54,12 +54,12 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, onInit, onSelect])
 
   return (
-    <div className='h-full'>
-      <div className="embla">
+    <div className='h-full mt-20'>
+      <div className="embla relative">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((index) => (
-              <div className="embla__slide" key={index}>
+              <div className="embla__slide " key={index}>
                 <div className="embla__slide__number">
                   <span>{index + 1}</span>
                 </div>
@@ -68,8 +68,8 @@ const EmblaCarousel = (props) => {
                   src={info[index % info.length].image}
                   alt="Your alt text"
                 />
-                <div className='h-screen absolute top-0 w-full flex justify-center items-center'>
-                  <motion.div className='w-[50%] text-center'
+                <div className='h-full absolute top-0 w-full flex justify-center items-center'>
+                  <motion.div className='w-[70%] md:w-[50%] text-center'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
@@ -79,9 +79,9 @@ const EmblaCarousel = (props) => {
                       visible: { opacity: 1, y: 0 }
                     }}
                   >
-                    <div className='bg-black/25 px-20 py-10 rounded-xl'>
-                      <h1 className='text-xl lg:text-3xl font-semibold text-center mb-2 lg:mb-4 font-lato'>{info[index % info.length].heading}</h1>
-                      <p className='text-sm lg:text-md lg:text-lg font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
+                    <div className='bg-black/25 p-6 md:px-20 md:py-10 rounded-xl '>
+                      <h1 className='text-md md:text-xl lg:text-3xl font-semibold text-center mb-2 lg:mb-4 font-lato'>{info[index % info.length].heading}</h1>
+                      <p className='text-xs md:text-sm lg:text-md lg:text-lg font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
                       <div className="w-full flex place-content-center">
                         <a href={info[index % info.length].id} className='text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >Learn More</a>
                       </div>
@@ -94,7 +94,7 @@ const EmblaCarousel = (props) => {
           </div>
         </div>
 
-        <div className="flex justify-between w-full px-10 bottom-[50%] absolute">
+        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%] absolute">
           <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
           <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
         </div>
