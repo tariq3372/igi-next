@@ -59,7 +59,7 @@
     ],
     "bed linen" : {
         "title" : "IGI Linen",
-        "logo" : "igi-linen.jpg",
+        "logo" : "/igi-linen.jpg",
         "description" : "Imran Gulf Industries is a well-known company that specializes in the creation of high-quality bed linen. We provide a comprehensive assortment of bed linen products, such as bedsheets, pillowcases, duvet covers, and more. We are  known for using premium materials and talented craftsmen to make its bed linen durable, comfortable, and aesthetically beautiful. Our designs cater to a wide range of tastes and preferences, making their goods suited for both residential and business contexts. IGI has a reputation for producing high-quality bed linen that combines elegance, functionality, and longevity.",
         "products": {
             "flat bed sheet" : {
@@ -72,7 +72,7 @@
                 "color" : ["White"],
                 "size" : ["160 x 260", "240 x 260"],
                 "type" : ["Single", "King"],
-                "link" : "/bed linen/flat bed sheet",
+                "link" : "/en/bed linen/flat bed sheet",
                 "img" : ["/bs.jpeg","https://www.itchotels.com/content/dam/itchotels/in/umbrella/sleeep-boutique/image/product-details/desktop/Bedsheet.jpg"]
             },
             "fitted bed sheet" : {
@@ -124,7 +124,7 @@
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "type" : ["Single 01", "Single 02", "Queen", "King"],
                 "link" : "/bed linen/mattress protectors",
-                "img" : ["matress-protector.jpeg"]
+                "img" : ["/matress-protector.jpeg"]
             },
             "mattress encasement protectors" : {
                 "title": "Mattress Encasement Protectors",
@@ -137,7 +137,7 @@
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "type" : ["Single 01", "Single 02", "Queen", "King"],
                 "link" : "/bed linen/mattress encasement protectors",
-                "img" : ["mattress-encasement-protector.jpeg"]
+                "img" : ["/mattress-encasement-protector.jpeg"]
             },
             "bed runner" : {
                 "title": "Bed Runner With Pillow",
@@ -247,7 +247,7 @@
     },
     "guest amenities" : {
         "title" : "IGI Guest Amenities",
-        "logo" : "igi-guest-amenities.jpg",
+        "logo" : "/igi-guest-amenities.jpg",
         "description" : "In 5-star hotels, IGI guest facilities are famous for their high quality and opulent experience. These products, which have been made with the highest care and attention to detail, provide discriminating guests a relaxing and restorative experience. The assortment consists of high-quality shampoo, conditioner, body wash, lotion, and soap items. The sophisticated packaging lends an air of refinement and reflects the lavishness of the hotel. The distinctive scents of IGI create a rich sensory environment that pampers and re-energizes visitors.",
         "products": {
             "bath towel" : {
@@ -261,7 +261,7 @@
                 "size" : ["70*140","80*160"],
                 "type" : ["70*140","80*160"],
                 "link" : "/guest amenities/bath towel",
-                "img" : ["bath-towel.jpg"]
+                "img" : ["/bath-towel.jpg"]
             },
             "hand towel" : {
                 "title": "Hand Towel",
@@ -475,7 +475,7 @@
     },
     "homes" : {
         "title" : "IGI Home",
-        "logo" : "igi-home.jpg",
+        "logo" : "/igi-home.jpg",
         "description" : "IGI Home is known for its exceptional quality and luxurious feel, offering bed linens made from premium materials like high-thread-count cotton or silky-smooth sateen. These linens ensure durability, breathability, and a soft touch against the skin, while being carefully selected to withstand frequent washing. IGI Home offers a wide range of designs and patterns, catering to various tastes and preferences. The stitching and finishing of IGI Home are of the highest standard, ensuring long-lasting durability and preventing fraying or unraveling. The fitted sheets have deep pockets, providing a secure fit on mattresses of various thicknesses.",
         "products": {
             "home comforter set" : {
@@ -572,7 +572,7 @@
     },
     "hotel supplies" : {
         "title" : "IGI Hotel Supplies",
-        "logo" : "igi-hotel-supplies.jpg",
+        "logo" : "/igi-hotel-supplies.jpg",
         "description" : "Imran Gulf Industries is a well-known company that specializes in the creation of high-quality bed linen. We provide a comprehensive assortment of bed linen products, such as bedsheets, pillowcases, duvet covers, and more. We are  known for using premium materials and talented craftsmen to make its bed linen durable, comfortable, and aesthetically beautiful. Our designs cater to a wide range of tastes and preferences, making their goods suited for both residential and business contexts. IGI has a reputation for producing high-quality bed linen that combines elegance, functionality, and longevity.",
         "products": {
             "toilet paper tissue" : {
@@ -1150,7 +1150,7 @@
     },
     "mattresses" : {
         "title" : "IGI Mattress",
-        "logo" : "igi-mattress.jpg",
+        "logo" : "/igi-mattress.jpg",
         "description" : "Imran Gulf Industries is a prominent maker of quality mattresses with years of expertise and a dedication to perfection. Our expert artisans and engineers precisely create each mattress, employing cutting-edge technology and the best materials available. Our mattresses are associated with luxury, giving an opulent sleeping experience that rejuvenates both body and mind. We are devoted to sustainability and use eco-friendly measures throughout our production process. Our experienced and pleasant staff is always ready to assist you in locating the appropriate mattress, and we stand behind the quality of our mattresses with extensive guarantees. Choose Imran Gulf Industries and you can be confident that you are investing in a superb sleep solution that will reinvent your nights and invigorate your days.",
         "products": {
             "mattress 01" : {
