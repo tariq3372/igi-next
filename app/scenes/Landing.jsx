@@ -1,16 +1,12 @@
-import GetDictionary from '../utils/dictionaries';
+"use client"
 import { motion } from "framer-motion"
 
-const Landing = ({ lang }) => {
-
-    const dict = GetDictionary(lang)
-
+const Landing = ({ dict }) => {
     return (
         <div>
             <section id='services'
                 class="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-center bg-no-repeat bg-fixed"
             >
-
                 <div
                     class="absolute inset-0 bg-black/25"
                 ></div>
