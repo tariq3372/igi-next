@@ -106,7 +106,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 {/* First Category of Products */}
                 <div class="mb-5">
-                    <Link href={lang+"/bed linen"}>
+                    <Link href={lang+"/bed linen"} scroll={false}>
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['bed linen'].logo} alt="logo" />
@@ -126,7 +126,7 @@ const Product = ({ products, productsContent, lang }) => {
                   <EmblaCarousel slides={SLIDES1} options={OPTIONS} images={img1} titles={title01} links={link01} />
                 </section>
 
-                <Link href={lang+"/bed linen"}>
+                <Link href={lang+"/bed linen"} scroll={true}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">View More</h2>
                     <AiOutlineDown className='animate-bounce' />

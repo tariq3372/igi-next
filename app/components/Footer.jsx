@@ -4,10 +4,10 @@ import SocialMediaIcons from './SocialMediaIcons'
 const Footer = () => {
   return (
     <footer id="#Footer" className="">
-      <div className=" mb-0 max-h-screen max-w-screen-xl">
+      <div className=" mb-0">
 
         <hr class="my-5 lg:mt-10 lg:mb-5 border-black/75 sm:mx-auto lg:my-7.5" />
-        <div className="sm:flex text-blacks sm:items-center sm:justify-between">
+        <div className="sm:flex text-black sm:items-center sm:justify-between">
 
           <div className='flex items-center md:justify-between mx-auto w-full'>
             <div className='items-center'>
