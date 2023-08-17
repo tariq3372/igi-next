@@ -10,7 +10,7 @@ import { FaHome, FaInfoCircle, FaCartPlus, FaHandsHelping, FaPhoneSquareAlt } fr
 import { FaBackward } from 'react-icons/fa'
 
 import { SlGlobe } from "react-icons/sl";
-import { useRouter } from 'next/navigation';
+import { usePathname, useRouter } from 'next/navigation';
 import { Router } from 'next/router';
 
 
@@ -28,15 +28,18 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 }
 
 const Navbar02 = ({ selectedPage, setSelectedPage, home, about, products, contact, services }) => {
-
+    
     const route = useRouter();
     // console.log(Router.name);
-
+    let path = usePathname();
     // Language Dropdown
     const options = ['English', 'Arabic'];
     const onOptionChangeHandler = (event) => {
-        console.log("User Selected Value - ", event.target.value)
-        i18n.changeLanguage(event.target.value)
+        if(event.target.value==="Arabic"){
+            route.push(path.replace("/en","/ar"))
+        }else{
+            route.push(path.replace("/ar","/en"))
+        }
     }
 
     // const [isMenuToggled, setIsMenuToggled] = useState(false);

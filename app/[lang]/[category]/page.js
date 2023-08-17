@@ -6,9 +6,7 @@ import Footer from '@/app/components/Footer';
 
 const Category = ({params:{lang,category}}) => {
     category=category.replace("%20"," ");
-    const dict = GetDictionary(lang)
-
-    console.log(category);
+    const dict = GetDictionary(lang);
     
     // Converting JSON Object to Array Map for multiple product card mapping
     const products = dict[category].products;

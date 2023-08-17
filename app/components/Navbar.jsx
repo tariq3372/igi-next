@@ -5,9 +5,11 @@ import AnchorLink from 'react-anchor-link-smooth-scroll';
 import { MdSegment, MdClear } from "react-icons/md";
 import { FaHome, FaInfoCircle, FaCartPlus, FaHandsHelping, FaPhoneSquareAlt } from "react-icons/fa"
 import GetDictionary from '../utils/dictionaries';
+import { usePathname, useRouter } from 'next/navigation';
 
 
 const Link = ({ page, selectedPage, setSelectedPage }) => {
+
     const lowerCasePage = page.toLowerCase();
     return (
         <AnchorLink className={`${selectedPage === lowerCasePage ? "text-toddy-gold" : "text-magic-potion"}
@@ -21,14 +23,18 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
 }
 
 const Navbar =  ({ selectedPage, setSelectedPage, home, about, products, contact, services, lang }) => {
-
+    
+    const route = useRouter();
+    let path = usePathname();
     const dict =  GetDictionary(lang) // en
-
     // Language Dropdown
     const options = ['English', 'Arabic'];
     const onOptionChangeHandler = (event) => {
-        console.log("User Selected Value - ", event.target.value)
-        // i18n.changeLanguage(event.target.value)
+        if(event.target.value==="Arabic"){
+            route.push(path.replace("/en","/ar"))
+        }else{
+            route.push(path.replace("/ar","/en"))
+        }
     }
 
     const [isMenuToggled, setIsMenuToggled] = useState(false);
