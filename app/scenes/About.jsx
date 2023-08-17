@@ -1,5 +1,4 @@
 import React from 'react'
-import { motion } from 'framer-motion';
 import { m, LazyMotion, domAnimation } from "framer-motion"
 import SocialMediaIcons from '../components/SocialMediaIcons';
 
@@ -20,7 +19,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     className=''
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false}}
+                    viewport={{ once: true}}
                     transition={{delay:0.1, duration: 0.3 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -42,7 +41,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                 <m.div className="mt-8 flex flex-wrap gap-4 text-center"
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false}}
+                    viewport={{ once: true}}
                     transition={{delay:0.1, duration: 0.6 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
@@ -68,7 +67,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     className=""
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.5 }}
+                    viewport={{ once: true, amount: 0.5 }}
                     transition={{delay:0.1, duration: 0.9 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
