@@ -49,7 +49,7 @@ const EachProducts = ({params:{lang,category,product},href }) => {
 
 
   return (
-    <>
+    <div>
       <Navbar02 />
       <div class="bg-white pt-20 lg:pt-28">
         <div class="">
@@ -231,7 +231,7 @@ const EachProducts = ({params:{lang,category,product},href }) => {
           <Footer />
         </div>
       </div>
-    </>
+    </div>
   )
 }
 
