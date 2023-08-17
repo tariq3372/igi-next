@@ -157,7 +157,7 @@ const Product = ({ products, productsContent, lang }) => {
                   <EmblaCarousel slides={SLIDES2} options={OPTIONS} images={img2} titles={title02} links={link02} />
                 </section>
 
-                <Link href="/guest amenities">
+                <Link href={lang+"/guest amenities"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">View More</h2>
                     <AiOutlineDown className='animate-bounce' />
@@ -168,7 +168,7 @@ const Product = ({ products, productsContent, lang }) => {
                 {/* Third Category of Products */}
                 <div>
                 <div class="mt-10 mb-8">
-                    <Link href="/homes">
+                    <Link href={lang+"/homes"}>
                     <div class="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['homes'].logo} alt="logo" />
@@ -190,7 +190,7 @@ const Product = ({ products, productsContent, lang }) => {
                 </section>
                 </div>
 
-                <Link href="/homes">
+                <Link href={lang+"/homes"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">View More</h2>
                     <AiOutlineDown className='animate-bounce' />
@@ -201,7 +201,7 @@ const Product = ({ products, productsContent, lang }) => {
                 {/* Fourth Category of Products */}
                 <div>
                 <div class="mt-10 mb-8">
-                    <Link href="/mattresses">
+                    <Link href={lang+"/mattresses"}>
                     <div class="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['mattresses'].logo} alt="logo" />
@@ -223,7 +223,7 @@ const Product = ({ products, productsContent, lang }) => {
                 </section>
                 </div>
 
-                <Link href="/mattresses">
+                <Link href={lang+"/mattresses"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">View More</h2>
                     <AiOutlineDown className='animate-bounce' />
@@ -234,7 +234,7 @@ const Product = ({ products, productsContent, lang }) => {
                 {/* Fifth Category of Products */}
                 <div className=''>
                 <div class="mt-10 mb-8">
-                    <Link href="/hotel supplies">
+                    <Link href={lang+"/hotel supplies"}>
                     <div class="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-3/4 lg:w-3/12'>
                             <img className='w-10' src={dict['hotel supplies'].logo} alt="logo" />
@@ -256,7 +256,7 @@ const Product = ({ products, productsContent, lang }) => {
                 </section>
                 </div>
 
-                <Link href="/hotel supplies">
+                <Link href={lang+"/hotel supplies"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">View More</h2>
                     <AiOutlineDown className='animate-bounce' />

@@ -72,7 +72,7 @@ const Navbar02 = ({ selectedPage, setSelectedPage, home, about, products, contac
                 {/* ) : ( */}
 
                     <div className='hidden p-4 md:flex items-center justify-between gap-16'>
-                        <a href='/'><img className='w-12 lg:w-14' src="igi-main-logo.png" alt="Logo" /></a>
+                        <a href='/'><img className='w-12 lg:w-14' src="/igi-main-logo.png" alt="Logo" /></a>
                         <select onChange={onOptionChangeHandler} className="bg-magic-potion px-2 h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                             {options.map((option, index) => {
                                 return <option className='py-2' key={index} >

@@ -18,8 +18,8 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     className=''
                     initial="hidden"
                     whileInView="visible"
-                    viewport={{ once: false, amount: 0.9 }}
-                    transition={{ duration: 0.3 }}
+                    viewport={{ once: false, amount: 0.5 }}
+                    transition={{delay:0.1, duration: 0.3 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -41,7 +41,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{delay:0.1, duration: 0.6 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
@@ -62,11 +62,12 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     </a>
                 </motion.div>
 
-                <motion.div className=""
+                <motion.div 
+                    className=""
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
-                    transition={{ duration: 0.9 }}
+                    transition={{delay:0.1, duration: 0.9 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
