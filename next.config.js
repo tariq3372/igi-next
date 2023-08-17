@@ -1,4 +1,16 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+    basePath: "/en",
+}
 
-module.exports = nextConfig
+module.exports = {
+    async redirects() {
+      return [
+        {
+          source: '/',
+          destination: '/en',
+          permanent: true,
+        },
+      ]
+    },
+  }
