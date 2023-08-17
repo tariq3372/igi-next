@@ -36,7 +36,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                         {aboutContent}
                     </p>
                 </motion.div>
-{/* 
+
                 <motion.div className="mt-8 flex flex-wrap gap-4 text-center"
                     initial="hidden"
                     whileInView="visible"
@@ -74,7 +74,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     }}
                 >
                     <SocialMediaIcons />
-                </motion.div> */}
+                </motion.div>
             </div>
 
             {/* Image Section */}
