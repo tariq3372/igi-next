@@ -18,7 +18,7 @@ module.exports = {
 
       },
       backgroundImage: (theme) => ({
-        "hero-image": "url(../public/hotel-bed-room.jpg)",
+        "hero-image": "url(/hotel-bed-room.jpg)",
       }),
       fontFamily : {
         montserrat: ["Montserrat", "serif"],

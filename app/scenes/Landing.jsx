@@ -1,5 +1,5 @@
 import GetDictionary from '../utils/dictionaries';
-import { m, LazyMotion, domAnimation } from "framer-motion"
+import { motion } from "framer-motion"
 
 const Landing = ({lang}) => {
 
@@ -7,9 +7,8 @@ const Landing = ({lang}) => {
 
     return (
         <div>
-            <LazyMotion features={domAnimation}>
             <section id='services'
-                class="h-[75vh] lg:min-h-screen relative bg-[url('/hotel-bed-room.jpg')] bg-cover bg-center bg-no-repeat bg-fixed"
+                class="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-center bg-no-repeat bg-fixed"
                 >
                 
                 <div
@@ -20,28 +19,28 @@ const Landing = ({lang}) => {
                     class="relative mx-auto max-w-screen-xl pt-60 lg:flex min-h-screen lg:items-center lg:px-8"
                 > */}
                     <div class="relative px-10 font-montserrat text-start sm:text-left pt-[100px] lg:pt-[250px]">
-                    <m.div
+                    <motion.div
                         class=""
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.3 }}
                         variants={{
                             hidden: {opacity:0, x:-50},
                             visible: {opacity:1, x:0}
                         }}
                     >
-                        <h1 class="text-3xl leading-snug tracking-[1.5px] font-extrabold sm:text-5xl">
+                       <h1 class="text-3xl leading-snug tracking-[1.5px] font-extrabold sm:text-5xl">
                             <strong class="block font-extrabold text-white">
                             {dict.serviceSolagan}
                             </strong>
                         </h1>
-                    </m.div>
+                    </motion.div>
 
-                    <m.div
+                    <motion.div
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.5 }}
                         variants={{
                             hidden: {opacity:0, x:-50},
@@ -49,15 +48,15 @@ const Landing = ({lang}) => {
                         }}
                     >
 
-                        <p class="mt-4 font-semibold text-md text-md sm:text-xl">
+<p class="mt-4 font-semibold text-md text-md sm:text-xl">
                         {dict.serviceSolagan0}
                         </p>
-                    </m.div>
+                    </motion.div>
 
-                    <m.div class="mt-5 flex flex-wrap gap-4 text-center"
+                    <motion.div class="mt-5 flex flex-wrap gap-4 text-center"
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.75 }}
                         variants={{
                             hidden: {opacity:0, x:-50},
@@ -71,24 +70,24 @@ const Landing = ({lang}) => {
                         {button01}
                         </a> */}
 
-                        <a
+<a
                         href="/catalog.pdf"
                         download
                         class="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring active:text-rose-500 sm:w-auto"
                         >
                         {dict.button02}
                         </a>
-                    </m.div>
+                    </motion.div>
                     </div>
                 {/* </div> */}
             </section>
             <section id='offering'
                 class="h-auto relative text-magic-potion bg-cover bg-center bg-no-repeat pt-20 px-5 lg:px-20">
-                    <m.div
-                        className=""
+                    <motion.div
+                        class=""
                         initial="hidden"
                         whileInView="visible"
-                        viewport={{ once: true, amount: 0.5 }}
+                        viewport={{ once: false, amount: 0.5 }}
                         transition={{ duration: 0.3 }}
                         variants={{
                             hidden: {opacity:0, x:-50},
@@ -103,9 +102,8 @@ const Landing = ({lang}) => {
                         {dict.service02}
                         </h1>
                         <p>{dict.serviceContent02}</p>
-                    </m.div>
+                    </motion.div>
             </section>
-            </LazyMotion>
         </div>
     )
 }
