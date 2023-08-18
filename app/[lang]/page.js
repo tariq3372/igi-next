@@ -14,8 +14,8 @@ import ContactSection from "../scenes/ContactSection";
 export default function Page({ params: { lang } }) {
   const dict = GetDictionary(lang) // en
   const [selectedPage, setSelectedPage] = useState('home');
-  const height = window.innerWidth;
-  console.log(height);
+  // const height = window.innerWidth;
+  // console.log(height);
   return (
     <div className='font-montserrat'>
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} home={dict.home} about={dict.about} products={dict.products} contact={dict.contact} services={dict.services} lang={dict.lang} />

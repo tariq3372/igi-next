@@ -21,7 +21,7 @@ const ContactSection = () => {
         <div className='mx-10 lg:ml-20'>
             <p className='lg:w-1/2 w-full leading-relaxed text-gray-500 mb-2'>Plan on Placing a Large Order?</p>
             <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>Receive Your Free Quote</h1>
-            <div class="h-1 w-20 bg-magic-potion rounded"></div>
+            <div className="h-1 w-20 bg-magic-potion rounded"></div>
 
         <form 
                 target="_blank"
@@ -76,13 +76,13 @@ const ContactSection = () => {
             </form>
         </div>
         <div className='my-5 mx-10 lg:mx-20 lg:my-0'>
-        <div class="p-2.5 bg-magic-potion/20">
+        <div className="p-2.5 bg-magic-potion/20">
                 <div
-                class="overflow-hidden cursor-pointer rounded-sm relative group z-0 before:absolute before:w-full before:max-w-[600px]  before:h-full"
+                className="overflow-hidden cursor-pointer rounded-sm relative group z-0 before:absolute before:w-full before:max-w-[600px]  before:h-full"
                 >
                     <img
                         alt="First Product"
-                        class="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[400px] md:max-w-[550px]"
+                        className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[400px] md:max-w-[550px]"
                         src="cottonbro-studio.jpg"
                     />   
                 </div>

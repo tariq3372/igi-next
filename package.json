@@ -12,7 +12,6 @@
     "autoprefixer": "10.4.15",
     "embla-carousel-autoplay": "^8.0.0-rc11",
     "embla-carousel-react": "^8.0.0-rc11",
-    "framer-motion": "^10.16.0",
     "next": "13.4.16",
     "next-intl": "^2.19.1",
     "postcss": "8.4.28",

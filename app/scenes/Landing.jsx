@@ -1,63 +1,37 @@
 "use client"
-import { motion } from "framer-motion"
 
 const Landing = ({ dict }) => {
     return (
         <div>
             <section id='services'
-                class="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-center bg-no-repeat bg-fixed"
+                className="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-center bg-no-repeat bg-fixed"
             >
                 <div
-                    class="absolute inset-0 bg-black/25"
+                    className="absolute inset-0 bg-black/25"
                 ></div>
 
                 {/* <div
                     class="relative mx-auto max-w-screen-xl pt-60 lg:flex min-h-screen lg:items-center lg:px-8"
                 > */}
-                <div class="relative px-10 font-montserrat text-start sm:text-left pt-[100px] lg:pt-[250px]">
-                    <motion.div
-                        class=""
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                        transition={{ duration: 0.3 }}
-                        variants={{
-                            hidden: { opacity: 0, x: -50 },
-                            visible: { opacity: 1, x: 0 }
-                        }}
+                <div className="relative px-10 font-montserrat text-start sm:text-left pt-[100px] lg:pt-[250px]">
+                    <div
                     >
-                        <h1 class="text-3xl leading-snug tracking-[1.5px] font-extrabold sm:text-5xl">
-                            <strong class="block font-extrabold text-white">
+                        <h1 className="text-3xl leading-snug tracking-[1.5px] font-extrabold sm:text-5xl">
+                            <strong className="block font-extrabold text-white">
                                 {dict.serviceSolagan}
                             </strong>
                         </h1>
-                    </motion.div>
+                    </div>
 
-                    <motion.div
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                        transition={{ duration: 0.5 }}
-                        variants={{
-                            hidden: { opacity: 0, x: -50 },
-                            visible: { opacity: 1, x: 0 }
-                        }}
+                    <div
                     >
 
-                        <p class="mt-4 font-semibold text-md text-md sm:text-xl">
+                        <p className="mt-4 font-semibold text-md text-md sm:text-xl">
                             {dict.serviceSolagan0}
                         </p>
-                    </motion.div>
+                    </div>
 
-                    <motion.div class="mt-5 flex flex-wrap gap-4 text-center"
-                        initial="hidden"
-                        whileInView="visible"
-                        viewport={{ once: false, amount: 0.5 }}
-                        transition={{ duration: 0.75 }}
-                        variants={{
-                            hidden: { opacity: 0, x: -50 },
-                            visible: { opacity: 1, x: 0 }
-                        }}
+                    <div className="mt-5 flex flex-wrap gap-4 text-center"
                     >
                         {/* <a
                         href="https://wa.me/966594161652"
@@ -69,16 +43,16 @@ const Landing = ({ dict }) => {
                         <a
                             href="/catalog.pdf"
                             download
-                            class="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring active:text-rose-500 sm:w-auto"
+                            className="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring active:text-rose-500 sm:w-auto"
                         >
                             {dict.button02}
                         </a>
-                    </motion.div>
+                    </div>
                 </div>
                 {/* </div> */}
             </section>
             <section id='offering'
-                class="h-auto relative text-magic-potion bg-cover bg-center bg-no-repeat pt-20 px-5 lg:px-20">
+                className="h-auto relative text-magic-potion bg-cover bg-center bg-no-repeat pt-20 px-5 lg:px-20">
                 <div>
                     <h1 className="text-xl lg:text-3xl font-bold mb-5 lg:mb-8 ">
                         {dict.service01}

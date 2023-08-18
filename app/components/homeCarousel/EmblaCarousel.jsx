@@ -9,9 +9,6 @@ import {
   NextButton
 } from './EmblaCarouselArrowsDotsButtons'
 
-import { motion } from 'framer-motion';
-import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
-
 const EmblaCarousel = (props) => {
   const { slides, options, info } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay:10000})])
@@ -69,15 +66,7 @@ const EmblaCarousel = (props) => {
                   alt="Your alt text"
                 />
                 <div className='h-full absolute top-0 w-full flex justify-center items-center'>
-                  <motion.div className='w-[70%] md:w-[50%] text-center'
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
-                    transition={{ delay: 0.1, duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0.5, y: +50 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
+                  <div className='w-[70%] md:w-[50%] text-center'
                   >
                     <div className='bg-black/25 p-6 md:px-20 md:py-10 rounded-xl '>
                       <h1 className='text-md md:text-xl lg:text-3xl font-semibold text-center mb-2 lg:mb-4 font-lato'>{info[index % info.length].heading}</h1>
@@ -87,14 +76,14 @@ const EmblaCarousel = (props) => {
                       </div>
                     </div>
 
-                  </motion.div>
+                  </div>
                 </div>
               </div>
             ))}
           </div>
         </div>
 
-        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%] absolute">
+        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%]">
           <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
           <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
         </div>
