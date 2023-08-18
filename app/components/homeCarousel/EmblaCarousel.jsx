@@ -9,6 +9,8 @@ import {
   NextButton
 } from './EmblaCarouselArrowsDotsButtons'
 
+import { motion } from 'framer-motion';
+
 const EmblaCarousel = (props) => {
   const { slides, options, info } = props
   const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay:10000})])
@@ -51,12 +53,12 @@ const EmblaCarousel = (props) => {
   }, [emblaApi, onInit, onSelect])
 
   return (
-    <div className='h-full mt-20'>
+    <div className='h-full mt-20 md:mt-0'>
       <div className="embla relative">
         <div className="embla__viewport" ref={emblaRef}>
           <div className="embla__container">
             {slides.map((index) => (
-              <div className="embla__slide " key={index}>
+              <div className="embla__slide" key={index}>
                 <div className="embla__slide__number">
                   <span>{index + 1}</span>
                 </div>
@@ -66,7 +68,15 @@ const EmblaCarousel = (props) => {
                   alt="Your alt text"
                 />
                 <div className='h-full absolute top-0 w-full flex justify-center items-center'>
-                  <div className='w-[70%] md:w-[50%] text-center'
+                  <motion.div className='w-[50%] text-center'
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: false, amount: 0.3 }}
+                    transition={{ delay: 0.1, duration: 0.5 }}
+                    variants={{
+                      hidden: { opacity: 0.5, y: +50 },
+                      visible: { opacity: 1, y: 0 }
+                    }}
                   >
                     <div className='bg-black/25 p-6 md:px-20 md:py-10 rounded-xl '>
                       <h1 className='text-md md:text-xl lg:text-3xl font-semibold text-center mb-2 lg:mb-4 font-lato'>{info[index % info.length].heading}</h1>
@@ -76,7 +86,7 @@ const EmblaCarousel = (props) => {
                       </div>
                     </div>
 
-                  </div>
+                  </motion.div>
                 </div>
               </div>
             ))}

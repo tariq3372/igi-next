@@ -15,7 +15,7 @@ const HomeCarousel = ({dict}) => {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
-    <div className="w-full md:h-[92vh] h-[60vh]">
+    <div className="w-full md:h-screen h-[60vh]">
     <section id='home' className="sandbox__carousel">
       <EmblaCarousel slides={SLIDES} options={OPTIONS} info={Carousel} />
     </section>

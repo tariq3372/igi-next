@@ -9,10 +9,11 @@ import '../components/slideToScroll/css/sandbox.css'
 import EmblaCarousel from '../components/slideToScroll/EmblaCarousel'
 
 import {AiOutlineRight, AiOutlineDown} from 'react-icons/ai'
+import GetDictionary from '../utils/dictionaries'
 
 
-const Product = ({ products, productsContent, dict }) => {
-
+const Product = ({ products, productsContent, lang }) => {
+    const dict = GetDictionary(lang);
     const products1 = dict['bed linen'].products;
     const products2 = dict['guest amenities'].products;
     const products3 = dict['homes'].products;

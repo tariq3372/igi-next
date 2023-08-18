@@ -20,14 +20,7 @@ const SocialMediaIcons = ({align}) => {
         >
             <SiTiktok size={20} className='fill-energy-yellow hover:fill-tulip-yellow transition duration-500' />
         </a>
-        {/* <a 
-        className=''
-        href='www.facebook.com'
-        target="_blank"
-        rel='noreferrer'
-        >
-            <SiFacebook size={20} className='fill-energy-yellow hover:fill-tulip-yellow transition duration-500' />
-        </a> */}
+        
         <a 
         className=''
         href='https://www.linkedin.com/company/imran-gulf-industries-f-co/about/'

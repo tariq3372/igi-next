@@ -23,7 +23,7 @@ export default function Page({ params: { lang } }) {
       <About setSelectedPage={setSelectedPage} aboutTitle={dict.aboutTitle}
         aboutContent="Imran Gulf Industries F. Co. is a leading provider of tailor-made solutions and premium quality products, founded in Saudi Arabia with a decade-long track record of excellence. We understand the importance of providing our customers with the very best in terms of quality, comfort, and style. Our specialization in supplying hotel linens to the hospitality industry and luxury bed linens to discerning households reflects our commitment to meeting the highest standards of elegance, luxury, and beauty. Whether you are a hotelier looking to elevate your guests' experience, or a household with an eye for luxury and comfort, we have the perfect solutions for you."
         button02={dict.button02} button03={dict.button03} />
-      <Product products={dict.products} productsContent={dict.productsContent} dict={dict} />
+      <Product products={dict.products} productsContent={dict.productsContent} lang={lang} />
       <Landing dict={dict} />
       <Fabric dict={dict} />
       <ContactSection/>

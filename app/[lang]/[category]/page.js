@@ -12,7 +12,7 @@ const Category = ({params:{lang,category}}) => {
     const products = dict[category].products;
 
     return (
-        <>
+        <div>
 
         <Navbar02 />
 
@@ -51,7 +51,7 @@ const Category = ({params:{lang,category}}) => {
 
         <Footer />
 
-        </>
+        </div>
     )
 }
 
