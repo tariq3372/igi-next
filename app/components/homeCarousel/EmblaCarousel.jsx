@@ -63,7 +63,7 @@ const EmblaCarousel = (props) => {
                   <span>{index + 1}</span>
                 </div>
                 <img
-                  className="h-screen w-full"
+                  className="h-full w-full"
                   src={info[index % info.length].image}
                   alt="Your alt text"
                 />
