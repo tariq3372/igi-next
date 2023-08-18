@@ -2,6 +2,7 @@
 
 import { FaBackward } from 'react-icons/fa'
 import { usePathname, useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 
 const Navbar02 = ({ selectedPage, setSelectedPage, home, about, products, contact, services }) => {
@@ -34,11 +35,11 @@ const Navbar02 = ({ selectedPage, setSelectedPage, home, about, products, contac
                         Back
                     </button>
 
-                    <a href='/'>
+                    <Link href='/'>
                         <img className='w-12 lg:w-14' src={"/igi-main-logo.png"} alt="Logo" />
-                    </a>
+                    </Link>
 
-                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white w-[100px] px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                         {options.map((option, index) => {
                             return <option className='py-2' key={index} >
                                 {option}
@@ -49,7 +50,7 @@ const Navbar02 = ({ selectedPage, setSelectedPage, home, about, products, contac
 
                 <div className='md:hidden p-4 flex items-center justify-between gap-16'>
                     <a href='/'><img className='w-12 lg:w-14' src="/igi-main-logo.png" alt="Logo" /></a>
-                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 w-[100px] h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                         {options.map((option, index) => {
                             return <option className='py-2' key={index} >
                                 {option}

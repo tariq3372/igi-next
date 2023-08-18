@@ -39,7 +39,7 @@ const Landing = ({ dict }) => {
                         }}
                     >
 
-                        <p className="mt-4 font-semibold text-md text-md sm:text-xl">
+                        <p className="mt-4 font-semibold text-white text-md text-md sm:text-xl">
                             {dict.serviceSolagan0}
                         </p>
                     </motion.div>

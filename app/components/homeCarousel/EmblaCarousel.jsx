@@ -68,7 +68,7 @@ const EmblaCarousel = (props) => {
                   alt="Your alt text"
                 />
                 <div className='h-full absolute top-0 w-full flex justify-center items-center'>
-                  <motion.div className='w-[50%] text-center'
+                  <motion.div className='w-[60%] text-center'
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.3 }}
@@ -78,11 +78,11 @@ const EmblaCarousel = (props) => {
                       visible: { opacity: 1, y: 0 }
                     }}
                   >
-                    <div className='bg-black/25 p-6 md:px-20 md:py-10 rounded-xl '>
-                      <h1 className='text-md md:text-xl lg:text-3xl font-semibold text-center mb-2 lg:mb-4 font-lato'>{info[index % info.length].heading}</h1>
-                      <p className='text-xs md:text-sm lg:text-md lg:text-lg font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
+                    <div className='bg-black/25 p-6 md:px-10 md:py-10 rounded-xl text-white'>
+                      <h1 className='text-lg md:text-xl lg:text-4xl font-semibold text-center mb-2.5 lg:mb-4 font-sans'>{info[index % info.length].heading}</h1>
+                      <p className='text-xs md:text-md lg:text-md lg:text-lg font-montserrat  font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
                       <div className="w-full flex place-content-center">
-                        <a href={info[index % info.length].id} className='text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >Learn More</a>
+                        <a href={info[index % info.length].id} className='text-sm md:text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >Learn More</a>
                       </div>
                     </div>
 
@@ -93,7 +93,7 @@ const EmblaCarousel = (props) => {
           </div>
         </div>
 
-        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%]">
+        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%] text-white">
           <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
           <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
         </div>

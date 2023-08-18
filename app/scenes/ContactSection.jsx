@@ -6,10 +6,13 @@ const ContactSection = () => {
     const {
         register,
         trigger,
+        handleSubmit,
         formState: {errors}
     } = useForm();
 
     const onSubmit = async (e) => {
+
+        console.log(e)
         const isValid = await trigger();
         if (!isValid) {
             e.preventDefault();
@@ -25,7 +28,7 @@ const ContactSection = () => {
 
         <form 
                 target="_blank"
-                onSubmit={onSubmit}
+                onSubmit={handleSubmit(onSubmit)}
                 action=""
                 method="POST"
             >
@@ -66,12 +69,14 @@ const ContactSection = () => {
                         className='w-full rounded mt-2 mb-2 md:mb-5 md:rounded-lg bg-gray-100 text-sm font-normal placeholder-gray-500 px-5 py-2'
                         type='text'
                         placeholder='Type your query'
-                        {...register("name",{
+                        {...register("query",{
                             required: true,
-                            maxLength: 20,
+                            maxLength: 60,
                         })}
                     /></label>    
-                    <button className='rounded border-2 border-magic-potion mb-3 md:rounded-full text-magic-potion bg-white px-8 py-1.5'>Submit</button>
+                    <button className='rounded border-2 border-magic-potion mb-3 md:rounded-full text-magic-potion bg-white px-8 py-1.5'
+                            type='submit'
+                    >Submit</button>
                 </div>
             </form>
         </div>
@@ -81,8 +86,8 @@ const ContactSection = () => {
                 className="overflow-hidden cursor-pointer rounded-sm relative group z-0 before:absolute before:w-full before:max-w-[600px]  before:h-full"
                 >
                     <img
-                        alt="First Product"
-                        className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[400px] md:max-w-[550px]"
+                        alt="House Keeping folded towels"
+                        className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[400px] md:max-w-[600px]"
                         src="cottonbro-studio.jpg"
                     />   
                 </div>
