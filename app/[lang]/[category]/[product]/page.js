@@ -5,24 +5,25 @@ import Footer from '@/app/components/Footer';
 
 import EmblaCarousel from '@/app/components/carousel/EmblaCarousel'
 import { Collapse } from 'react-collapse'
-import { AiOutlinePlus, AiOutlineMinus } from 'react-icons/ai'
+import { AiOutlinePlus, AiOutlineMinus, AiOutlineUp } from 'react-icons/ai'
 
 // css
 import '@/app/components/carousel/css/embla.css'
 import '@/app/components/carousel/css/sandbox.css'
 import Navbar02 from '@/app/components/Navbar02'
 import GetDictionary from '@/app/utils/dictionaries';
+import { Disclosure } from '@headlessui/react'
 
 
-const EachProducts = ({params:{lang,category,product},href }) => {
+const EachProducts = ({ params: { lang, category, product }, href }) => {
 
-  category=category.replace("%20"," ");
-  product=product.replace("%20"," ").replace("%20"," ");
+  category = category.replace("%20", " ");
+  product = product.replace("%20", " ").replace("%20", " ");
   const dict = GetDictionary(lang);
 
   const [open, setOpen] = useState(false);
   const toggle = () => {
-    
+
     if (open == true) {
       setOpen(false);
     } else {
@@ -34,13 +35,13 @@ const EachProducts = ({params:{lang,category,product},href }) => {
   console.log(href)
 
   const fabric = dict[category].products[product].fabric;
-  const design = dict[category].products[product].design ;
+  const design = dict[category].products[product].design;
   const colorCode = dict[category].products[product].colorCode;
-  const color = dict[category].products[product].color ;
-  const size = dict[category].products[product].size ;
-  const type = dict[category].products[product].type ;
+  const color = dict[category].products[product].color;
+  const size = dict[category].products[product].size;
+  const type = dict[category].products[product].type;
 
-  const img = dict[category].products[product].img ;
+  const img = dict[category].products[product].img;
 
   // Slides
   const OPTIONS = {}
@@ -104,63 +105,125 @@ const EachProducts = ({params:{lang,category,product},href }) => {
               {/* <!-- Details Accordion - Starts --> */}
               <div
                 className='bg-white w-full'
-                
+
               >
-
-                <div className={`bg-magic-potion inline-flex w-full justify-between px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg transition-all delay-500'}`} onClick={toggle}>
+                <Disclosure>
+                {({ open }) => (
+                /* Use the `open` state to conditionally change the direction of an icon. */
+                <>
+                
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg delay-500' : 'rounded-lg transition-all delay-500'}`}>
                   <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
-                  {open ? <AiOutlineMinus className='fill-tulip-yellow w-5 h-5' /> : <AiOutlinePlus className='fill-tulip-yellow w-5 h-5' />}
-                </div>
-                <Collapse isOpened={open} >
+                    <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white">
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.material}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {fabric.map((s, i) =>
+                          <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p class="text-lg font-semibold">{fabric[i]}</p>
+                            {i === fabric.length - 1 ? "" : <p className="text-white">|</p>}
 
-                  <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
-                    <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.material}</div>
-                    <div class="col-span-3 flex flex-wrap gap-2">
-                    {fabric.map((s, i) =>
-                        <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
-                          <p class="text-lg font-semibold">{fabric[i]}</p>
-                          {i===fabric.length-1 ? "" :  <p className="text-white">|</p>}
-                          
-                        </div>
+                          </div>
 
-                      )}
-                    </div>
-                    
-                    <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.design}</div>
-                    <div class="col-span-3 flex flex-wrap gap-2">
-                    {design.map((s, i) =>
-                        <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
-                          <p class="text-lg font-semibold">{design[i]}</p>
-                          {i===design.length-1 ? "" :  <p className="text-white">|</p>}
-                        </div>
-                    )}
-                    </div>
-
-                    <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.color}</div>
-                    <div className="col-span-3 flex flex-wrap gap-2">
-                    {color.map((s, i) =>
-                      <div className="relative group">
-                        <button type="button" className={`h-8 w-8 rounded-full border bg-[#ffffff] ring-2 ring-transparent ring-offset-1 transition duration-100 hover:ring-tulip-yellow hover:ring-2`}></button>
-                        <div className="text-xs absolute -top-5 left-5 scale-0 rounded bg-white p-1 w-10 text-magic-potion group-hover:scale-100">{color[i]}</div>
+                        )}
                       </div>
-                    )}
+
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.design}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {design.map((s, i) =>
+                          <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p class="text-lg font-semibold">{design[i]}</p>
+                            {i === design.length - 1 ? "" : <p className="text-white">|</p>}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.color}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {color.map((s, i) =>
+                          <div className="relative group">
+                            <button type="button" className={`h-8 w-8 rounded-full border bg-[#ffffff] ring-2 ring-transparent ring-offset-1 transition duration-100 hover:ring-tulip-yellow hover:ring-2`}></button>
+                            <div className="text-xs absolute -top-5 left-5 scale-0 rounded bg-white p-1 w-10 text-magic-potion group-hover:scale-100">{color[i]}</div>
+                          </div>
+                        )}
+                      </div>
+
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.size}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {size.map((s, i) =>
+                          <div class="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
+                            <p class="text-lg font-semibold">{type[i]}</p>
+                            <div class="text-xs absolute top-12 left-0 scale-0 rounded bg-white p-1 w-20 text-magic-potion group-hover:scale-100">{s}</div>
+                          </div>
+
+                        )}
+                      </div>
+
+                      <div class="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div>
+
                     </div>
-
-                    <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.size}</div>
-                    <div class="col-span-3 flex flex-wrap gap-2">
-                      {size.map((s, i) =>
-                        <div class="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
-                          <p class="text-lg font-semibold">{type[i]}</p>
-                          <div class="text-xs absolute top-12 left-0 scale-0 rounded bg-white p-1 w-20 text-magic-potion group-hover:scale-100">{s}</div>
-                        </div>
-
-                      )}
-                    </div>
-
-                    <div class="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div>
-
+                  </Disclosure.Panel>
+                  </>
+                  )}
+                  </Disclosure>
+                  {/* <div className={`bg-magic-potion inline-flex w-full justify-between px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg transition-all delay-500'}`} onClick={toggle}>
+                    <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
+                    {open ? <AiOutlineMinus className='fill-tulip-yellow w-5 h-5' /> : <AiOutlinePlus className='fill-tulip-yellow w-5 h-5' />}
                   </div>
-                </Collapse>
+                  <Collapse isOpened={open} className='bg-magic-potion rounded-b-lg'>
+
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.material}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {fabric.map((s, i) =>
+                          <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p class="text-lg font-semibold">{fabric[i]}</p>
+                            {i === fabric.length - 1 ? "" : <p className="text-white">|</p>}
+
+                          </div>
+
+                        )}
+                      </div>
+
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.design}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {design.map((s, i) =>
+                          <div class="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p class="text-lg font-semibold">{design[i]}</p>
+                            {i === design.length - 1 ? "" : <p className="text-white">|</p>}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.color}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {color.map((s, i) =>
+                          <div className="relative group">
+                            <button type="button" className={`h-8 w-8 rounded-full border bg-[#ffffff] ring-2 ring-transparent ring-offset-1 transition duration-100 hover:ring-tulip-yellow hover:ring-2`}></button>
+                            <div className="text-xs absolute -top-5 left-5 scale-0 rounded bg-white p-1 w-10 text-magic-potion group-hover:scale-100">{color[i]}</div>
+                          </div>
+                        )}
+                      </div>
+
+                      <div class="col-span-1 text-sm text-alabaster md:text-base">{dict.size}</div>
+                      <div class="col-span-3 flex flex-wrap gap-2">
+                        {size.map((s, i) =>
+                          <div class="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
+                            <p class="text-lg font-semibold">{type[i]}</p>
+                            <div class="text-xs absolute top-12 left-0 scale-0 rounded bg-white p-1 w-20 text-magic-potion group-hover:scale-100">{s}</div>
+                          </div>
+
+                        )}
+                      </div>
+
+                      <div class="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div>
+
+                    </div>
+                  </Collapse> */}
+                
               </div>
               {/* <!-- Details Accordion - Ends --> */}
 
