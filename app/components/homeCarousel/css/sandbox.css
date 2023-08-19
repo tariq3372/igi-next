@@ -1,20 +1,16 @@
 .sandbox {
   width: 100%;
-  height: 100%;
 }
 @media (min-width: 750px) {
   .sandbox {
-    width: 100%;
-  height: 100%;
+    height: 100vh;
   }
 }
 .sandbox__carousel {
-  width: 100%;
-  height: 100%;
   position: relative;
-  background-color: var(--background-code);
+  /* background-color: var(--background-code); */
 }
-@media (max-width: 749px) {
+/* @media (max-width: 749px) {
   .sandbox__carousel {
     border-top: 0.1rem solid var(--detail-low-contrast);
     border-bottom: 0.1rem solid var(--detail-low-contrast);
@@ -25,7 +21,7 @@
     border-radius: 0.4rem;
     border: 0.1rem solid var(--detail-low-contrast);
   }
-}
+} */
 .sandbox__header {
   font-size: 2rem;
   font-weight: 700;

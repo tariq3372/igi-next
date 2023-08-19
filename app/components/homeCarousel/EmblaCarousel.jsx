@@ -1,73 +1,51 @@
-import React, { useState, useEffect, useCallback } from 'react'
-import { FaCircle } from 'react-icons/fa'
-
+import React, { useCallback } from 'react'
 import useEmblaCarousel from 'embla-carousel-react'
-import Autoplay from 'embla-carousel-autoplay'
+import { DotButton, useDotButton } from './EmblaCarouselDotButton'
 import {
-  DotButton,
   PrevButton,
-  NextButton
-} from './EmblaCarouselArrowsDotsButtons'
+  NextButton,
+  usePrevNextButtons
+} from './EmblaCarouselArrowButtons'
+import Autoplay from 'embla-carousel-autoplay'
 
 import { motion } from 'framer-motion';
 
 const EmblaCarousel = (props) => {
   const { slides, options, info } = props
-  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({delay:10000})])
-  const [prevBtnDisabled, setPrevBtnDisabled] = useState(true)
-  const [nextBtnDisabled, setNextBtnDisabled] = useState(true)
-  const [selectedIndex, setSelectedIndex] = useState(0)
-  const [scrollSnaps, setScrollSnaps] = useState([])
-
-  const scrollPrev = useCallback(
-    () => emblaApi && emblaApi.scrollPrev(),
-    [emblaApi]
-  )
-  const scrollNext = useCallback(
-    () => emblaApi && emblaApi.scrollNext(),
-    [emblaApi]
-  )
-  const scrollTo = useCallback(
-    (index) => emblaApi && emblaApi.scrollTo(index),
-    [emblaApi]
-  )
-
-  const onInit = useCallback((emblaApi) => {
-    setScrollSnaps(emblaApi.scrollSnapList())
+  const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay({ delay: 10000 })])
+  const onButtonClick = useCallback((emblaApi) => {
+    const { autoplay } = emblaApi.plugins()
+    if (!autoplay) return
+    if (autoplay.options.stopOnInteraction !== false) autoplay.stop()
   }, [])
 
-  const onSelect = useCallback((emblaApi) => {
-    setSelectedIndex(emblaApi.selectedScrollSnap())
-    setPrevBtnDisabled(!emblaApi.canScrollPrev())
-    setNextBtnDisabled(!emblaApi.canScrollNext())
-  }, [])
+  const { selectedIndex, scrollSnaps, onDotButtonClick } = useDotButton(
+    emblaApi,
+    onButtonClick
+  )
 
-  useEffect(() => {
-    if (!emblaApi) return
-
-    onInit(emblaApi)
-    onSelect(emblaApi)
-    emblaApi.on('reInit', onInit)
-    emblaApi.on('reInit', onSelect)
-    emblaApi.on('select', onSelect)
-  }, [emblaApi, onInit, onSelect])
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick
+  } = usePrevNextButtons(emblaApi, onButtonClick)
 
   return (
-    <div className='h-full mt-20 md:mt-0'>
-      <div className="embla relative">
-        <div className="embla__viewport" ref={emblaRef}>
-          <div className="embla__container">
-            {slides.map((index) => (
-              <div className="embla__slide" key={index}>
-                <div className="embla__slide__number">
-                  <span>{index + 1}</span>
-                </div>
-                <img
-                  className="h-full w-full"
-                  src={info[index % info.length].image}
-                  alt="Your alt text"
-                />
-                <div className='h-full absolute top-0 w-full flex justify-center items-center'>
+    <div className="emblahome">
+      <div className="embla__viewporthome" ref={emblaRef}>
+        <div className="embla__containerhome">
+          {slides.map((index) => (
+            <div className="embla__slide" key={index}>
+              <div className="embla__slide__number">
+                <span>{index + 1}</span>
+              </div>
+              <img
+                className="embla__slide__img"
+                src={info[index % info.length].image}
+                alt="Your alt text"
+              />
+              <div className='h-full absolute top-0 w-full flex justify-center items-center'>
                   <motion.div className='w-[60%] text-center'
                     initial="hidden"
                     whileInView="visible"
@@ -87,27 +65,27 @@ const EmblaCarousel = (props) => {
                     </div>
 
                   </motion.div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        <div className=" absolute flex justify-between w-full px-3 md:px-10 bottom-[50%] text-white">
-          <PrevButton onClick={scrollPrev} disabled={prevBtnDisabled} />
-          <NextButton onClick={scrollNext} disabled={nextBtnDisabled} />
+                </div>  
+            </div>
+          ))}
         </div>
       </div>
-      <div className="flex justify-center w-full px-10 bottom-0 absolute">
-      <div className="flex gap-3 py-3">
+
+      <div className="embla__buttons">
+        <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
+        <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
+      </div>
+
+      <div className="embla__dots">
         {scrollSnaps.map((_, index) => (
           <DotButton
             key={index}
-            onClick={() => scrollTo(index)}
-            className={''.concat(index === selectedIndex ? 'text-white' : 'text-white/50')}
-          ><FaCircle/></DotButton>
+            onClick={() => onDotButtonClick(index)}
+            className={'embla__dot'.concat(
+              index === selectedIndex ? ' embla__dot--selected' : ''
+            )}
+          />
         ))}
-      </div>
       </div>
     </div>
   )

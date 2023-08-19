@@ -6,8 +6,8 @@ import "../components/homeCarousel/css/embla.css"
 import "../components/homeCarousel/css/sandbox.css"
 
 
-const HomeCarousel = ({dict}) => {
-  
+const HomeCarousel = ({ dict }) => {
+
 
   const Carousel = dict.homeCarousel;
   const OPTIONS = { loop: true }
@@ -15,11 +15,11 @@ const HomeCarousel = ({dict}) => {
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
   return (
-    <div className="w-full md:h-screen h-[50vh]">
-    <section id='home' className="sandbox__carousel">
-      <EmblaCarousel slides={SLIDES} options={OPTIONS} info={Carousel} />
-    </section>
-  </div>
+    <div className="sandboxhome">
+      <section id='home' className="sandbox__carouselhome">
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} info={Carousel} />
+      </section>
+    </div>
   )
 }
 
