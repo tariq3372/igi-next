@@ -12,19 +12,22 @@ const ContactSection = () => {
         handleSubmit,
         formState: { errors }
     } = useForm();
+
     const isAboveSmallScreens = useMediaQuery("(min-width: 768px)");
+    
     const onSubmit = async (e) => {
         let url = ""
-        let message = "Name     = " + e.name +
+        let message = "New Interaction from your Website:%0a%0aName     = " + e.name +
             "%0aEmail ID = " + e.email +
             "%0aPhone    = " + e.phone +
-            "%0aQuery    = " + e.query;
+            "%0aQuery     = " + e.query;
         if (isAboveSmallScreens) {
-            url = `https://web.whatsapp.com/send?phone=9962262253&text=${message}&app_absent=0`
+            url = `https://web.whatsapp.com/send?phone=+966595278489&text=${message}&app_absent=0`
         } else {
-            url = `https://api.whatsapp.com/send?phone=9962262253&text=${message}&app_absent=0`
+            url = `https://api.whatsapp.com/send?phone=+966595278489&text=${message}&app_absent=0`
         }
         route.push(url);
+        // window.push(url);
     }
 
     return (
