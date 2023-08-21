@@ -116,9 +116,9 @@ const Product = ({ products, productsContent, lang }) => {
                     </Link>
                 </div>
                 <div className='sandbox01'>
-                <section className="sandbox01__carousel">
+                <div className="sandbox01__carousel">
                   <EmblaCarousel slides={SLIDES1} options={OPTIONS} images={img1} titles={title01} links={link01} />
-                </section>
+                </div>
 
                 <Link href={dict.langsuffix+"/bed linen"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
@@ -147,9 +147,9 @@ const Product = ({ products, productsContent, lang }) => {
                 </div>
 
                 <div className='sandbox01'>
-                <section className="sandbox01__carousel">
+                <div className="sandbox01__carousel">
                   <EmblaCarousel slides={SLIDES2} options={OPTIONS} images={img2} titles={title02} links={link02} />
-                </section>
+                </div>
 
                 <Link href={dict.langsuffix+"/guest amenities"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
@@ -179,9 +179,9 @@ const Product = ({ products, productsContent, lang }) => {
                 </div>
 
                 <div className='sandbox01'>
-                <section className="sandbox01__carousel">
+                <div className="sandbox01__carousel">
                   <EmblaCarousel slides={SLIDES3} options={OPTIONS} images={img3} titles={title03} links={link03} />
-                </section>
+                </div>
                 </div>
 
                 <Link href={dict.langsuffix+"/homes"}>
@@ -212,9 +212,9 @@ const Product = ({ products, productsContent, lang }) => {
                 </div>
 
                 <div className='sandbox01'>
-                <section className="sandbox01__carousel">
+                <div className="sandbox01__carousel">
                   <EmblaCarousel slides={SLIDES4} options={OPTIONS} images={img4} titles={title04} links={link04} />
-                </section>
+                </div>
                 </div>
 
                 <Link href={dict.langsuffix+"/mattresses"}>
@@ -245,9 +245,9 @@ const Product = ({ products, productsContent, lang }) => {
                 </div>
 
                 <div className='sandbox01'>
-                <section className="sandbox01__carousel">
+                <div className="sandbox01__carousel">
                   <EmblaCarousel slides={SLIDES5} options={OPTIONS} images={img5} titles={title05} links={link05} />
-                </section>
+                </div>
                 </div>
 
                 <Link href={dict.langsuffix+"/hotel supplies"}>

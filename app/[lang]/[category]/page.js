@@ -1,3 +1,4 @@
+"use client"
 import GetDictionary from '@/app/utils/dictionaries';
 import React from 'react'
 import Navbar02 from '@/app/components/Navbar02';

@@ -2,8 +2,8 @@ import Link from "next/link"
 
 const Fabric = ({ dict }) => {
     return (
-        <section className="text-gray-600 mx-5 lg:mx-20">
-            <div id='fabrics' className="container py-10 lg:pb-10 lg:pt-28">
+        <section id='fabrics' className="text-gray-600 mx-5 lg:mx-20">
+            <div className="container py-10 lg:pb-10 lg:pt-28">
                 <div className="flex flex-wrap w-full mb-10">
                     <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
                         <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-tulip-yellow">{dict.fabric} </h1>
