@@ -72,7 +72,6 @@ const Navbar02 = ({lang}) => {
                         })}
                     </select>
                 </div>
-
             </div>
         </nav>
     )

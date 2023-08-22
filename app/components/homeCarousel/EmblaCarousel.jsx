@@ -46,16 +46,7 @@ const EmblaCarousel = (props) => {
                 alt="Your alt text"
               />
               <div className='h-full absolute top-0 w-full flex justify-center items-center'>
-                  <motion.div className='w-[60%] text-center'
-                    initial="hidden"
-                    whileInView="visible"
-                    viewport={{ once: false, amount: 0.3 }}
-                    transition={{ delay: 0.1, duration: 0.5 }}
-                    variants={{
-                      hidden: { opacity: 0.5, y: +50 },
-                      visible: { opacity: 1, y: 0 }
-                    }}
-                  >
+                  <div className='w-[60%] text-center'>
                     <div className='bg-black/25 p-6 md:px-10 md:py-10 rounded-xl text-white'>
                       <h1 className='text-lg md:text-xl lg:text-4xl font-semibold text-center mb-2.5 lg:mb-4 font-sans'>{info[index % info.length].heading}</h1>
                       <p className='text-xs md:text-md lg:text-md lg:text-lg font-montserrat  font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
@@ -63,8 +54,7 @@ const EmblaCarousel = (props) => {
                         <a href={info[index % info.length].id} className='text-sm md:text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >Learn More</a>
                       </div>
                     </div>
-
-                  </motion.div>
+                  </div>
                 </div>  
             </div>
           ))}
