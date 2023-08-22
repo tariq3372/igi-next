@@ -124,7 +124,7 @@ const Navbar = ({ selectedPage, setSelectedPage, home, about, products, contact,
                 {/* Small screens */}
                 <div className=' p-4 flex md:hidden items-center justify-between gap-16'>
                     <Link href='/'><img className='w-12 lg:w-14' src="igi-main-logo.png" alt="Logo" /></Link>
-                    <select value={selectLang} onClick={onOptionChangeHandler} className="bg-magic-potion text-white px-2 w-[100px] h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                    <select value={selectLang} onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 w-[100px] h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                         {options.map((option, index) => {
                             return <option className='py-2' key={index} >
                                 {option}
