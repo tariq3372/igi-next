@@ -9,11 +9,11 @@ export default function Page({ params: { lang } }) {
     const dict = GetDictionary(lang) // en
     return (
         <div>
-             <Navbar02 lang={lang}/>
+            <Navbar02 lang={lang}/>
 
              <ContactSection dict={dict} />
 
-             <div className="md:justify-between md:items-center">
+            <div className="md:justify-between md:items-center">
                 <div className="mx-5 lg:mx-20">
                     <Footer />
                 </div>
