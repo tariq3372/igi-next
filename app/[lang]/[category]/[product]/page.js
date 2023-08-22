@@ -52,7 +52,7 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
   return (
     <div>
       <Navbar02 lang={lang}/>
-      <div className="bg-white h-[80vh] pt-20 lg:pt-28">
+      <div className="bg-white pt-20 lg:pt-28">
         <div className="">
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 p-0 lg:mx-20">
             {/* <!-- images - start --> */}
