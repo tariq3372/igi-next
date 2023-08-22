@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 import useMediaQuery from '../hooks/useMediaQuery';
 import { useRouter } from 'next/navigation';
 
-const ContactSection = () => {
+const ContactSection = ({dict}) => {
     const route = useRouter();
 
     const {
@@ -33,8 +33,8 @@ const ContactSection = () => {
     return (
         <section id='contact' className='min-h-screen grid grid-cols-1 lg:grid-cols-2 pt-[100px]'>
             <div className='mx-10 lg:ml-20'>
-                <p className='lg:w-1/2 w-full leading-relaxed text-gray-500 mb-2'>Plan on Placing a Large Order?</p>
-                <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>Receive Your Free Quote</h1>
+                <p className='lg:w-1/2 w-full leading-relaxed text-gray-500 mb-2'>{dict.contactInfo}</p>
+                <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>{dict.contactContent}</h1>
                 <div className="h-1 w-20 bg-magic-potion rounded"></div>
 
                 <form
@@ -44,42 +44,42 @@ const ContactSection = () => {
                     method="POST"
                 >
                     <div className='flex flex-col justify-center font-montserrat mt-10'>
-                        <label className='text-gray-500 font-semibold'>Name :
+                        <label className='text-gray-500 font-semibold'>{dict.contactName} :
                             <input
                                 className='w-full rounded mt-2 mb-2 md:mb-5 md:rounded-lg bg-gray-100 text-sm font-normal placeholder-gray-500 px-5 py-2'
                                 type='text'
                                 name='Name'
-                                placeholder='Enter your Name'
+                                placeholder={dict.contactNameHolder}
                                 {...register("name", {
                                     required: true,
                                     maxLength: 20,
                                 })}
                             /></label>
-                        <label className='text-gray-500 font-semibold'>Email ID :
+                        <label className='text-gray-500 font-semibold'>{dict.contactEmail} :
                             <input
                                 className='w-full rounded mt-2 mb-2 md:mb-5 md:rounded-lg bg-gray-100 text-sm font-normal placeholder-gray-500 px-5 py-2'
                                 type='text'
-                                placeholder='Enter your Email ID'
+                                placeholder={dict.contactEmailHolder}
                                 {...register("email", {
                                     required: true,
                                     maxLength: 60,
                                 })}
                             /></label>
-                        <label className='text-gray-500 font-semibold'>Phone No. :
+                        <label className='text-gray-500 font-semibold'>{dict.contactPhone} :
                             <input
                                 className='w-full rounded mt-2 mb-2 md:mb-5 md:rounded-lg bg-gray-100 text-sm font-normal placeholder-gray-500 px-5 py-2'
                                 type='text'
-                                placeholder='Enter your Phone No'
+                                placeholder={dict.contactPhoneHolder}
                                 {...register("phone", {
                                     required: true,
                                     maxLength: 20,
                                 })}
                             /></label>
-                        <label className='text-gray-500 font-semibold'>Query :
+                        <label className='text-gray-500 font-semibold'>{dict.contactQuery} :
                             <textarea
                                 className='w-full rounded mt-2 mb-2 md:mb-5 md:rounded-lg bg-gray-100 text-sm font-normal placeholder-gray-500 px-5 py-2'
                                 type='text'
-                                placeholder='Type your query'
+                                placeholder={dict.contactQueryHolder}
                                 {...register("query", {
                                     required: true,
                                     maxLength: 80,
@@ -87,7 +87,7 @@ const ContactSection = () => {
                             /></label>
                         <button className='rounded border-2 border-magic-potion mb-3 md:rounded-full text-magic-potion bg-white px-8 py-1.5'
                             type='submit' onClick={handleSubmit(onSubmit)}
-                        >Submit</button>
+                        >{dict.submit}</button>
                     </div>
                 </form>
             </div>

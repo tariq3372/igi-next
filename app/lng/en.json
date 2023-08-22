@@ -8,6 +8,7 @@
     "button02" : "Explore our Services",
     "button04": "Download Catalogue",
     "learnMore": "Learn More",
+    "viewMore": "View More",
     "about" : "About",
     "aboutTitle" : "About Us",
     "aboutContent" : "Imran Gulf Industries F. Co. is a leading provider of tailor-made solutions and premium quality products, founded in Saudi Arabia with a decade-long track record of excellence. We understand the importance of providing our customers with the very best in terms of quality, comfort, and style. Our specialization in supplying hotel linens to the hospitality industry and luxury bed linens to discerning households reflects our commitment to meeting the highest standards of elegance, luxury, and beauty. Whether you are a hotelier looking to elevate your guests' experience, or a household with an eye for luxury and comfort, we have the perfect solutions for you.",
@@ -32,8 +33,8 @@
     "serviceContent01": "Imran Gulf Industries F. Co. is a hotel bedding supplier in Saudi Arabia for bed, bath and hotel hospitality needs. Supplying commercial quality products to the hospitality and healthcare industries with fast shipping to commercial business. Every order and customer request, large or small, is handled with timely offer and suggestion.",
     "service02": "Hospitality Quality Bedding, Linens & Towels for Commercial Business",
     "serviceContent02": "Our products are ideal for Hotels, Lodges, Resort and Day Spas, Furniture Rental Companies, Healthcare Hospitality Homes, Nursing Homes, Camps, Colleges, Universities, Property Management Companies, and many other businesses that need commercial hospitality quality linens, beddings, towels, table linens, and accessories in bulk quantities at low wholesale prices. Whether you are a seasoned buyer searching for a new source or a hotel housekeeping manager looking for purchasing wholesale textiles for commercial use, we welcome and thank you for the opportunity to help you with your hospitality, healthcare, and textiles raw material supplies.",
-    "fabric": "Farbrics",
-    "fabricContent": "Experience the opulent allure of Farbrics, where lavish elegance intertwines with a blissful embrace. Immerse yourself in a realm of heavenly textures and exquisite comfort that transcends ordinary linens.",
+    "fabric": "Fabrics",
+    "fabricContent": "Experience the opulent allure of fabrics, where lavish elegance intertwines with a blissful embrace. Immerse yourself in a realm of heavenly textures and exquisite comfort that transcends ordinary linens.",
     "fabricTypes": "Fabric Types",
     "fabric01": "Cotton Satin Stripes",
     "fabric02": "Cotton Plain Sateen",
@@ -48,7 +49,7 @@
         {
             "image": "/bg-02.jpg",
             "heading": "100% World Class Fabric",
-            "desc": "Experience the opulent allure of Farbrics, where lavish elegance intertwines with a blissful embrace.",
+            "desc": "Experience the opulent allure of fabrics, where lavish elegance intertwines with a blissful embrace.",
             "id": "#fabrics"
         },
         {

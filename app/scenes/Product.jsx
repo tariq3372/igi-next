@@ -104,12 +104,12 @@ const Product = ({ products, productsContent, lang }) => {
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['bed linen'].logo} alt="logo" />
-                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">IGI Linen</h1>
+                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['bed linen'].title}</h1>
                         </div>
                         
                         <div className="h-0.5 w-2/4 lg:w-8/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
-                        <h2 className="text-right mr-4">View More</h2>
+                        <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
                         </div>
                     </div>
@@ -122,7 +122,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 <Link href={dict.langsuffix+"/bed linen"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
-                    <h2 className="text-right mr-4">View More</h2>
+                    <h2 className="text-right mr-4">{dict.viewMore}</h2>
                     <AiOutlineDown className='animate-bounce' />
                 </div>
                 </Link>
@@ -134,12 +134,12 @@ const Product = ({ products, productsContent, lang }) => {
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-3/4 lg:w-3/12'>
                             <img className='w-10' src={dict['guest amenities'].logo} alt="logo" />
-                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">Guest Amenities</h1>
+                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['guest amenities'].title}</h1>
                         </div>
                         
                         <div className="h-0.5 w-1/4 lg:w-7/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
-                        <h2 className="text-right mr-4">View More</h2>
+                        <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
                         </div>
                     </div>
@@ -153,7 +153,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 <Link href={dict.langsuffix+"/guest amenities"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
-                    <h2 className="text-right mr-4">View More</h2>
+                    <h2 className="text-right mr-4">{dict.viewMore}</h2>
                     <AiOutlineDown className='animate-bounce' />
                 </div>
                 </Link>
@@ -166,12 +166,12 @@ const Product = ({ products, productsContent, lang }) => {
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['homes'].logo} alt="logo" />
-                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">Home</h1>
+                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['homes'].title}</h1>
                         </div>
                         
                         <div className="h-0.5 w-2/4 lg:w-8/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
-                        <h2 className="text-right mr-4">View More</h2>
+                        <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
                         </div>
                     </div>
@@ -186,7 +186,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 <Link href={dict.langsuffix+"/homes"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
-                    <h2 className="text-right mr-4">View More</h2>
+                    <h2 className="text-right mr-4">{dict.viewMore}</h2>
                     <AiOutlineDown className='animate-bounce' />
                 </div>
                 </Link>
@@ -199,12 +199,12 @@ const Product = ({ products, productsContent, lang }) => {
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
                             <img className='w-10' src={dict['mattresses'].logo} alt="logo" />
-                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">Mattress</h1>
+                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['mattresses'].title}</h1>
                         </div>
                         
                         <div className="h-0.5 w-2/4 lg:w-8/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
-                        <h2 className="text-right mr-4">View More</h2>
+                        <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
                         </div>
                     </div>
@@ -219,7 +219,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 <Link href={dict.langsuffix+"/mattresses"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
-                    <h2 className="text-right mr-4">View More</h2>
+                    <h2 className="text-right mr-4">{dict.viewMore}</h2>
                     <AiOutlineDown className='animate-bounce' />
                 </div>
                 </Link>
@@ -232,12 +232,12 @@ const Product = ({ products, productsContent, lang }) => {
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
                         <div className='flex flex-row gap-4 w-3/4 lg:w-3/12'>
                             <img className='w-10' src={dict['hotel supplies'].logo} alt="logo" />
-                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">Hotel supplies</h1>
+                            <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['hotel supplies'].title}</h1>
                         </div>
                         
                         <div className="h-0.5 w-1/4 lg:w-7/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
-                        <h2 className="text-right mr-4">View More</h2>
+                        <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
                         </div>
                     </div>
@@ -252,7 +252,7 @@ const Product = ({ products, productsContent, lang }) => {
 
                 <Link href={dict.langsuffix+"/hotel supplies"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
-                    <h2 className="text-right mr-4">View More</h2>
+                    <h2 className="text-right mr-4">{dict.viewMore}</h2>
                     <AiOutlineDown className='animate-bounce' />
                 </div>
                 </Link>

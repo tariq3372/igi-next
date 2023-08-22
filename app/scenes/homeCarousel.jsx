@@ -17,7 +17,7 @@ const HomeCarousel = ({ dict }) => {
   return (
     <div className="sandboxhome">
       <section id='home' className="sandbox__carouselhome">
-        <EmblaCarousel slides={SLIDES} options={OPTIONS} info={Carousel} />
+        <EmblaCarousel slides={SLIDES} options={OPTIONS} info={Carousel} learn={dict.learnMore} />
       </section>
     </div>
   )
