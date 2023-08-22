@@ -31,7 +31,7 @@ const ContactSection = ({dict}) => {
     }
 
     return (
-        <section id='contact' className='min-h-screen grid grid-cols-1 lg:grid-cols-2 pt-[100px]'>
+        <section id='contact' className='h-[80vh] grid grid-cols-1 lg:grid-cols-2 pt-[100px]'>
             <div className='mx-10 lg:ml-20'>
                 <p className='lg:w-1/2 w-full leading-relaxed text-gray-500 mb-2'>{dict.contactInfo}</p>
                 <h1 className='sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900'>{dict.contactContent}</h1>
@@ -99,7 +99,7 @@ const ContactSection = ({dict}) => {
                         <img
                             alt="House Keeping folded towels"
                             className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[400px] md:max-w-[600px]"
-                            src="cottonbro-studio.jpg"
+                            src="/cottonbro-studio.jpg"
                         />
                     </div>
                 </div>

@@ -12,6 +12,7 @@ import '@/app/components/carousel/css/sandbox.css'
 import Navbar02 from '@/app/components/Navbar02'
 import GetDictionary from '@/app/utils/dictionaries';
 import { Disclosure } from '@headlessui/react'
+import Link from 'next/link';
 
 
 const EachProducts = ({ params: { lang, category, product }, href }) => {
@@ -51,7 +52,7 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
   return (
     <div>
       <Navbar02 lang={lang}/>
-      <div className="bg-white pt-20 lg:pt-28">
+      <div className="bg-white h-[80vh] pt-20 lg:pt-28">
         <div className="">
           <div className="grid gap-8 grid-cols-1 md:grid-cols-2 p-0 lg:mx-20">
             {/* <!-- images - start --> */}
@@ -92,11 +93,11 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
               {/* <!-- buttons - start --> */}
               <div className="flex gap-2.5 mb-5 w-full">
 
-                <a href='/contact'
+                <Link href={"/"+lang+'/contact'}
                   className="block w-full rounded-full text-center bg-satin-linen px-12 py-3 text-sm font-bold text-magic-potion/80 border-2 border-magic-potion shadow hover:bg-magic-potion hover:border-tulip-yellow hover:text-tulip-yellow"
                 >
                   {dict.shopNow}
-                </a>
+                </Link>
 
               </div>
               {/* <!-- buttons - end --> */}
