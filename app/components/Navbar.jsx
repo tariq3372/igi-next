@@ -11,14 +11,27 @@ const Navbar = ({ selectedPage, setSelectedPage, home, about, products, contact,
 
     const route = useRouter();
     let path = usePathname();
-    const dict = GetDictionary(lang) // en
-    // Language Dropdown
+    
     const options = ['English', 'Arabic'];
+    const [selectLang, setselectLang] = useState("");
+
     const onOptionChangeHandler = (event) => {
+        console.log(lang);
+
         if (event.target.value === "Arabic") {
             route.push(path.replace("/en", "/ar"))
         } else {
             route.push(path.replace("/ar", "/en"))
+        }
+        
+    }
+    const changelang =(lang)=>{
+        if (lang === "ar") {
+            route.push(path.replace("/en", "/ar"))
+            setselectLang("Arabic")
+        } else {
+            route.push(path.replace("/ar", "/en"))
+            setselectLang("English")
         }
     }
 
@@ -39,6 +52,7 @@ const Navbar = ({ selectedPage, setSelectedPage, home, about, products, contact,
     };
 
     useEffect(() => {
+        changelang(lang);
         sections.current = document.querySelectorAll('section');
         window.addEventListener('scroll', handleScroll);
 
@@ -98,7 +112,7 @@ const Navbar = ({ selectedPage, setSelectedPage, home, about, products, contact,
                         {contact}
                     </Link>
 
-                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white w-[100px] px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                    <select value={selectLang} onChange={onOptionChangeHandler} className="bg-magic-potion text-white w-[100px] px-2 py-1 rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                         {options.map((option, index) => {
                             return <option className='py-2' key={index} >
                                 {option}
@@ -110,7 +124,7 @@ const Navbar = ({ selectedPage, setSelectedPage, home, about, products, contact,
                 {/* Small screens */}
                 <div className=' p-4 flex md:hidden items-center justify-between gap-16'>
                     <Link href='/'><img className='w-12 lg:w-14' src="igi-main-logo.png" alt="Logo" /></Link>
-                    <select onChange={onOptionChangeHandler} className="bg-magic-potion text-white px-2 w-[100px] h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
+                    <select value={selectLang} onClick={onOptionChangeHandler} className="bg-magic-potion text-white px-2 w-[100px] h-[25px] rounded-md font-montserrat text-sm hover:bg-tulip-yellow" >
                         {options.map((option, index) => {
                             return <option className='py-2' key={index} >
                                 {option}

@@ -15,7 +15,7 @@ const Category = ({ params: { lang, category } }) => {
     return (
         <div>
 
-            <Navbar02 />
+            <Navbar02 lang={lang}/>
 
             <section className='bg-alabaster mt-20 px-5 md:px-20 py-10'>
 
