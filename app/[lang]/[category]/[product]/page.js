@@ -48,6 +48,8 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
   const SLIDE_COUNT = img.length
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
+  console.log(dict[category].products[product].category)
+
 
   return (
     <div>
@@ -102,8 +104,10 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
               </div>
               {/* <!-- buttons - end --> */}
 
-              {/* <!-- Details Accordion - Starts --> */}
-              <div
+              {dict[category].products[product].category == 'Hotel Supplies' || dict[category].products[product].category == 'Mattresses' ? (
+                <div></div>
+              ):(
+                <div
                 className='bg-white w-full'
 
               >
@@ -156,7 +160,7 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
                         {size.map((s, i) =>
                           <div className="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
                             <p className="text-lg font-semibold">{type[i]}</p>
-                            <div className="text-xs absolute top-12 left-0 scale-0 rounded bg-white p-1 w-20 text-magic-potion group-hover:scale-100">{s}</div>
+                            <div className="text-xs z-40 absolute top-12 left-0 scale-0 rounded bg-white p-1 w-40 text-magic-potion group-hover:scale-100">{s}</div>
                           </div>
 
                         )}
@@ -170,6 +174,10 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
                   )}
                   </Disclosure>
               </div>
+              )}
+
+              {/* <!-- Details Accordion - Starts --> */}
+              
             </div>
           </div>
         </div>

@@ -59,7 +59,7 @@
 		}
 	],
 	"bed linen": {
-		"title": "IGI Linen",
+		"title": "IGI Hotel Linen",
 		"logo": "/igi-linen.jpg",
 		"description": "عمران الخليج للصناعات هي شركة معروفة متخصصة في صناعة أغطية السرير عالية الجودة. نحن نقدم تشكيلة شاملة من منتجات أغطية السرير ، مثل ملاءات الأسرة ، وأكياس الوسائد ، وأغطية الألحفة ، وأكثر من ذلك. نحن معروفون باستخدام المواد عالية الجودة والحرفيين الموهوبين لجعل أغطية السرير متينة ومريحة وجميلة من الناحية الجمالية. تلبي تصميماتنا مجموعة واسعة من الأذواق والتفضيلات ، مما يجعل سلعهم مناسبة للسياقات السكنية والتجارية على حد سواء. تشتهر IGI بإنتاج بياضات أسرّة عالية الجودة تجمع بين الأناقة والعملية وطول العمر",
 		"products": {
@@ -209,9 +209,9 @@
 			"blanket": {
 				"title": "بطانية",
 				"category": "أغطية السرير",
-				"description": "",
+				"description": "استمتع بالفخامة والراحة التي لا مثيل لها مع بطانية الكتان ذات الجودة الخمس نجوم، والتي تم تصميمها بخبرة بواسطة IGI. ملمسه الفخم، والدفء الفائق، والتصميم الخالد يرفع من مجموعة الفراش الخاصة بك، مما يعرض الرقي والراحة.",
 				"fabric": ["بيركال", "صقيل"],
-				"design": ["سهل", "مخطط"],
+				"design": [],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
 				"size": ["مفرد", "ملك", "ملكة"],
@@ -227,8 +227,8 @@
 				"design": ["سهل", "مخطط"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["مفرد", "ملك", "ملكة"],
-				"type": ["1.3 KG", "3 KG", "4 KG"],
+				"size": [],
+				"type": [],
 				"link": "/ar/bed linen/table cover",
 				"img": ["https://img.freepik.com/free-psd/dining-table-mockup-with-white-cloth-wooden-chairs_176382-1943.jpg?w=2000"]
 			},
@@ -240,8 +240,8 @@
 				"design": ["سهل", "مخطط"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["مفرد", "ملك", "ملكة"],
-				"type": ["1.3 KG", "3 KG", "4 KG"],
+				"size": [],
+				"type": [],
 				"link": "/ar/bed linen/chair cover",
 				"img": ["https://cdn.shopify.com/s/files/1/0434/4178/2939/products/SPANDEXBANQUTCHAIRCOVERDEFACTORIA_1200x1200.jpg?v=1684351179"]
 			}
@@ -458,7 +458,7 @@
 				"color": ["أبيض"],
 				"size": [],
 				"type": [],
-				"link": "/ar/guest amenities/shaving kit",
+				"link": "/ar/guest amenities/loofa",
 				"img": ["/loofa.png"]
 			},
 			"sewing kit": {
@@ -533,6 +533,19 @@
 				"link": "/ar/homes/pillow protectors",
 				"img": ["/pillow-protector.jpeg"]
 			},
+			"blanket": {
+				"title": "بطانية",
+				"category": "أغطية السرير",
+				"description": "استمتع بالفخامة والراحة التي لا مثيل لها مع بطانية الكتان ذات الجودة الخمس نجوم، والتي تم تصميمها بخبرة بواسطة IGI. ملمسه الفخم، والدفء الفائق، والتصميم الخالد يرفع من مجموعة الفراش الخاصة بك، مما يعرض الرقي والراحة.",
+				"fabric": ["بيركال", "صقيل"],
+				"design": [],
+				"colorCode": ["#ffffff"],
+				"color": ["أبيض"],
+				"size": ["مفرد", "ملك", "ملكة"],
+				"type": ["1.3 KG", "3 KG", "4 KG"],
+				"link": "/ar/home/blanket",
+				"img": ["https://images.pexels.com/photos/9788329/pexels-photo-9788329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.unsplash.com/photo-1584969404909-266c201ad383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
+			},
 			"duvet covers": {
 				"title": "أغطية اللحاف",
 				"category": "بيت",
@@ -562,7 +575,7 @@
 			"mattress topper": {
 				"title": "مرتبة توبر",
 				"category": "بيت",
-				"description": "",
+				"description": "غطاء مرتبة عالي الجودة من فئة الخمس نجوم هو غطاء فاخر مصمم لتحسين جودة النوم وتوفير راحة لا مثيل لها. مصنوع من أجود المواد، ويوفر سطحًا فخمًا لاسترخاء لا مثيل له، مما يضمن نومًا متجددًا ومتجددًا أثناء الليل.",
 				"fabric": ["بيركال", "صقيل"],
 				"design": ["سهل", "مخطط"],
 				"colorCode": ["#ffffff"],
@@ -840,7 +853,7 @@
 				"img": ["https://i.insider.com/598359aa8754331f4009ca0b?width=1200&format=jpeg"]
 			},
 			"kettle+tray+2 cups": {
-				"title": "غلاية + صينية + 2 أكواب",
+				"title": "غلاية مع صينية + 2 كوب",
 				"category": "إمدادات الفنادق",
 				"description": "تتميز المجموعة الممتازة بطعم أنيقة ، صينية أنيقة ، وكوب رائعان.تتكون الغلاية من الفولاذ المقاوم للصدأ عالي الجودة وتغلي الماء بدقة ، بينما تضيف الدرج المطابق لمسة من التطور.الكؤوس تكمل المجموعة تماما.",
 				"fabric": [],

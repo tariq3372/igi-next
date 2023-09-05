@@ -22,9 +22,9 @@ const ContactSection = ({dict}) => {
             "%0aPhone    = " + e.phone +
             "%0aQuery     = " + e.query;
         if (isAboveSmallScreens) {
-            url = `https://web.whatsapp.com/send?phone=+966595278489&text=${message}&app_absent=0`
+            url = `https://web.whatsapp.com/send?phone=+919962262253&text=${message}&app_absent=0`
         } else {
-            url = `https://api.whatsapp.com/send?phone=+966595278489&text=${message}&app_absent=0`
+            url = `https://api.whatsapp.com/send?phone=+919962262253&text=${message}&app_absent=0`
         }
         route.push(url);
         // window.push(url);

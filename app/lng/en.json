@@ -60,7 +60,7 @@
         }
     ],
     "bed linen" : {
-        "title" : "IGI Linen",
+        "title" : "IGI Hotel Linen",
         "logo" : "/igi-linen.jpg",
         "description" : "Imran Gulf Industries is a well-known company that specializes in the creation of high-quality bed linen. We provide a comprehensive assortment of bed linen products, such as bedsheets, pillowcases, duvet covers, and more. We are  known for using premium materials and talented craftsmen to make its bed linen durable, comfortable, and aesthetically beautiful. Our designs cater to a wide range of tastes and preferences, making their goods suited for both residential and business contexts. IGI has a reputation for producing high-quality bed linen that combines elegance, functionality, and longevity.",
         "products": {
@@ -73,7 +73,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["160 x 260", "240 x 260"],
-                "type" : ["Single", "King"],
+                "type" : ["160 x 260", "240 x 260"],
                 "link" : "/en/bed linen/flat bed sheet",
                 "img" : ["/bs.jpeg","https://www.itchotels.com/content/dam/itchotels/in/umbrella/sleeep-boutique/image/product-details/desktop/Bedsheet.jpg"]
             },
@@ -86,7 +86,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
                 "link" : "/en/bed linen/fitted bed sheet",
                 "img" : ["/fittedbs.jpeg", "https://img1.exportersindia.com/product_images/bc-full/2020/6/7394823/fitted-bed-sheet-1591516729-5469637.jpeg"]
             },
@@ -99,7 +99,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["155 x 235", "235 x 255"],
-                "type" : ["Single", "King"],
+                "type" : ["155 x 235", "235 x 255"],
                 "link" : "/en/bed linen/duvet",
                 "img" : ["/duvet.jpg", "https://www.premierinnathome.com/wp-content/uploads/2021/02/Duvet-Image-1-Hero-1-scaled.jpg"]
             },
@@ -110,8 +110,9 @@
                 "fabric" : ["Percale", "Satin"],
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
-                "color" : ["White"],"size" : ["160 x 240", "240 x 260"],
-                "type" : ["Single", "King"],
+                "color" : ["White"],
+                "size" : ["160 x 240", "240 x 260"],
+                "type" : ["160 x 240", "240 x 260"],
                 "link" : "/en/bed linen/duvet covers",
                 "img" : ["https://www.sleepfoundation.org/wp-content/uploads/2021/07/What-is-a-Duvet-Cover.jpg", "/duvetCover.jpg"]
             },
@@ -124,7 +125,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "link" : "/en/bed linen/mattress protectors",
                 "img" : ["/matress-protector.jpeg"]
             },
@@ -137,7 +138,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "link" : "/en/bed linen/mattress encasement protectors",
                 "img" : ["/mattress-encasement-protector.jpeg"]
             },
@@ -150,7 +151,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["170 x 45", "260 x 45"],
-                "type" : ["Queen", "King"],
+                "type" : ["170 x 45", "260 x 45"],
                 "link" : "/en/bed linen/bed runner",
                 "img" : ["/bedrunner.jpg"]
             },
@@ -163,7 +164,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
                 "link" : "/en/bed linen/bed skirt",
                 "img" : ["/bed-skirt.jpeg", "https://secure.img1-fg.wfcdn.com/im/94276422/compr-r85/2080/208013024/wayfair-basics-1800-series-14-bed-skirt.jpg"]
             },
@@ -176,7 +177,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["50 x 75", "50 x 90"],
-                "type" : ["Queen", "King"],
+                "type" : ["50 x 75", "50 x 90"],
                 "link" : "/en/bed linen/pillow",
                 "img" : ["/pillow.jpeg","https://upload.wikimedia.org/wikipedia/commons/a/ad/Pillows_on_a_hotel_bed.jpg"]
             },
@@ -189,7 +190,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["50 x 75", "50 x 90"],
-                "type" : ["Queen", "King"],
+                "type" : ["50 x 75", "50 x 90"],
                 "link" : "/en/bed linen/pillow cases",
                 "img" : ["https://m.media-amazon.com/images/I/51AmxIXD1RL.jpg","https://m.media-amazon.com/images/I/61qXIsijgpL._AC_UF1000,1000_QL80_.jpg"]
             },
@@ -202,19 +203,19 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["50 x 75", "50 x 90"],
-                "type" : ["Queen", "King"],
+                "type" : ["50 x 75", "50 x 90"],
                 "link" : "/en/bed linen/pillow protectors",
                 "img" : ["https://www.soakandsleep.com/media/catalog/product/c/o/cotton-protectors-base.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=265&width=265&canvas=265:265", "https://mohansluxury.com/wp-content/uploads/2023/01/mohans-pillow-protector.jpg"]
             },
             "blanket" : {
                 "title": "Blanket",
                 "category" : "Bed Linen",
-                "description" : "",
+                "description" : "Experience unparalleled luxury and comfort with our Linen five-star quality blanket, expertly crafted by IGI . Its plush texture, superior warmth, and timeless design elevate your bedding collection, showcasing sophistication and coziness.",
                 "fabric" : ["Percale", "Satin"],
-                "design" : ["Plain", "Striped"],
+                "design" : [],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
-                "size" : ["Single", "King", "Queen"],
+                "size" : ["1.3 KG", "3 KG", "4 KG"],
                 "type" : ["1.3 KG", "3 KG", "4 KG"],
                 "link" : "/en/bed linen/blanket",
                 "img" : ["https://images.pexels.com/photos/9788329/pexels-photo-9788329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.unsplash.com/photo-1584969404909-266c201ad383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
@@ -227,8 +228,8 @@
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
-                "size" : ["Single", "King", "Queen"],
-                "type" : ["1.3 KG", "3 KG", "4 KG"],
+                "size" : [],
+                "type" : [],
                 "link" : "/en/bed linen/table cover",
                 "img" : ["https://img.freepik.com/free-psd/dining-table-mockup-with-white-cloth-wooden-chairs_176382-1943.jpg?w=2000"]
             },
@@ -240,8 +241,8 @@
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
-                "size" : ["Single", "King", "Queen"],
-                "type" : ["1.3 KG", "3 KG", "4 KG"],
+                "size" : [],
+                "type" : [],
                 "link" : "/en/bed linen/chair cover",
                 "img" : ["https://cdn.shopify.com/s/files/1/0434/4178/2939/products/SPANDEXBANQUTCHAIRCOVERDEFACTORIA_1200x1200.jpg?v=1684351179"]
             }
@@ -370,15 +371,15 @@
                 "img" : ["/soap.png"]
             },
             "shover gel" : {
-                "title": "Shover Gel",
+                "title": "Shower Gel",
                 "category" : "Guest Amenities",
                 "description" : "Our 5-star quality shower gel provides a luxurious experience with rich, velvety lather that gently cleanses and nourishes skin, leaving it soft, smooth and fragrant. Crafted with the finest ingredients and infused with exotic botanical extracts, it provides an opulent bathing ritual.",
                 "fabric" : [""],
                 "design" : [""],
-                "colorCode" : ["#ffffff"],
-                "color" : ["White"],
-                "size" : [],
-                "type" : [],
+                "colorCode" : [],
+                "color" : [],
+                "size" : ["20ml","30ml"],
+                "type" : ["20ml","30ml"],
                 "link" : "/en/guest amenities/shover gel",
                 "img" : ["https://images.pexels.com/photos/3872898/pexels-photo-3872898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
             },
@@ -457,7 +458,7 @@
                 "color" : ["White"],
                 "size" : [],
                 "type" : [],
-                "link" : "/en/guest amenities/shaving kit",
+                "link" : "/en/guest amenities/loofa",
                 "img" : ["/loofa.png"]
             },
             "sewing kit" : {
@@ -489,7 +490,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "link" : "/en/homes/home comforter set",
                 "img" : ["/home-comforter-set.png"]
             },
@@ -502,7 +503,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
                 "link" : "/en/homes/mattress protectors",
                 "img" : ["/matress-protector.jpeg"]
             },
@@ -515,7 +516,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["50 x 75", "50 x 90"],
-                "type" : ["Queen", "King"],
+                "type" : ["50 x 75", "50 x 90"],
                 "link" : "/en/homes/pillow",
                 "img" : ["https://images.unsplash.com/photo-1445991842772-097fea258e7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
             },
@@ -528,9 +529,22 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["50 x 75", "50 x 90"],
-                "type" : ["Queen", "King"],
+                "type" : ["50 x 75", "50 x 90"],
                 "link" : "/en/homes/pillow protectors",
                 "img" : ["/pillow-protector.jpeg"]
+            },
+            "blanket" : {
+                "title": "Blanket",
+                "category" : "Home",
+                "description" : "Experience unparalleled luxury and comfort with our Linen five-star quality blanket, expertly crafted by IGI . Its plush texture, superior warmth, and timeless design elevate your bedding collection, showcasing sophistication and coziness.",
+                "fabric" : ["Percale", "Satin"],
+                "design" : [],
+                "colorCode" : ["#ffffff"],
+                "color" : ["White"],
+                "size" : ["1.3 KG", "3 KG", "4 KG"],
+                "type" : ["1.3 KG", "3 KG", "4 KG"],
+                "link" : "/en/home/blanket",
+                "img" : ["https://images.pexels.com/photos/9788329/pexels-photo-9788329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.unsplash.com/photo-1584969404909-266c201ad383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
             },
             "duvet covers" : {
                 "title": "Duvet Covers",
@@ -539,8 +553,9 @@
                 "fabric" : ["Percale", "Satin"],
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
-                "color" : ["White"],"size" : ["160 x 240", "240 x 260"],
-                "type" : ["Single", "King"],
+                "color" : ["White"],
+                "size" : ["160 x 240", "240 x 260"],
+                "type" : ["160 x 240", "240 x 260"],
                 "link" : "/en/homes/duvet covers",
                 "img" : ["https://www.sleepfoundation.org/wp-content/uploads/2021/07/What-is-a-Duvet-Cover.jpg", "/duvetCover.jpg"]
             },
@@ -553,20 +568,20 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
                 "link" : "/en/homes/fitted bed sheet",
                 "img" : ["/fittedbs.jpeg", "https://img1.exportersindia.com/product_images/bc-full/2020/6/7394823/fitted-bed-sheet-1591516729-5469637.jpeg"]
             },
             "mattress topper" : {
                 "title": "Mattress topper",
                 "category" : "Home",
-                "description" : "",
+                "description" : "Five-Star Quality Mattress Topper is a luxurious topper designed to enhance sleep quality and provide unparalleled comfort. Crafted with the finest materials, it offers a plush surface for unparalleled relaxation, ensuring a rejuvenated and rejuvenated night's sleep.",
                 "fabric" : ["Percale", "Satin"],
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
                 "link" : "/en/homes/mattress topper",
                 "img" : ["/mattress-topper.jpeg"]
             }
@@ -838,7 +853,7 @@
                 "img" : ["https://i.insider.com/598359aa8754331f4009ca0b?width=1200&format=jpeg"]
             },
             "kettle+tray+2 cups" : {
-                "title": "Kettle + Tray + 2 Cups",
+                "title": "Kettle with Tray + 2 Cups",
                 "category" : "Hotel Supplies",
                 "description" : "The premium set features a sleek kettle, elegant tray, and two exquisite cups. The kettle is made of high-quality stainless steel and boils water with precision, while the matching tray adds a touch of sophistication. The cups complement the set perfectly.",
                 "fabric" : [],
@@ -1164,7 +1179,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["160 x 260", "240 x 260"],
-                "type" : ["Single", "King"],
+                "type" : ["160 x 260", "240 x 260"],
                 "link" : "/en/mattresses/mattress 01",
                 "img" : ["/mattress-with-topper.png"]
             },
@@ -1177,7 +1192,7 @@
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
                 "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "type" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
                 "link" : "/en/mattresses/mattress 02",
                 "img" : [ "/mattress-without-topper.png"]
             }
