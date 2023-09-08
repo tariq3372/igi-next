@@ -39,7 +39,7 @@ const Category = ({ params: { lang, category } }) => {
                 {/* Divider with Title */}
                 <div className="mb-5">
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
-                        <h1 className="w-1/4 lg:w-2/12 sm:text-xl text-lg font-medium title-font mb-2 text-gray-900">{dict.oducts}</h1>
+                        <h1 className="w-1/4 lg:w-2/12 sm:text-xl text-lg font-medium title-font mb-2 text-gray-900">{dict.products}</h1>
                         <div className="h-0.5 w-3/4 lg:w-10/12 bg-gray-400 rounded"></div>
                     </div>
                 </div>

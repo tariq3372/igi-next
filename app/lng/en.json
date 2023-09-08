@@ -20,9 +20,11 @@
     "color" : "Color",
     "productDetails" : "Product Details",
     "size" : "Size (in CM)",
+    "weight" : "Weight",
     "material" : "Fabric",
     "design" : "Design",
     "productNote" : "Note : Custom made color & sizes available on request",
+    "productCustom" : "Note : Customizable on Request & Designs to Printed",
     "productDescriptionTitle" : "Description",
     "ship" : "2-4 day shipping",
     "shopNow" : "Quote Now",
@@ -339,8 +341,8 @@
                 "design" : [""],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
-                "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "size" : ["20ml","30ml"],
+                "type" : ["20ml","30ml"],
                 "link" : "/en/guest amenities/body lotion",
                 "img" : ["https://images.pexels.com/photos/1029896/pexels-photo-1029896.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
             },
@@ -352,8 +354,8 @@
                 "design" : [""],
                 "colorCode" : ["#ffffff"],
                 "color" : ["White"],
-                "size" : ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-                "type" : ["Single 01", "Single 02", "Queen", "King"],
+                "size" : ["20ml","30ml"],
+                "type" : ["20ml","30ml"],
                 "link" : "/en/guest amenities/shampoo",
                 "img" : ["https://images.pexels.com/photos/8015784/pexels-photo-8015784.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
             },
@@ -370,7 +372,7 @@
                 "link" : "/en/guest amenities/soap",
                 "img" : ["/soap.png"]
             },
-            "shover gel" : {
+            "shower gel" : {
                 "title": "Shower Gel",
                 "category" : "Guest Amenities",
                 "description" : "Our 5-star quality shower gel provides a luxurious experience with rich, velvety lather that gently cleanses and nourishes skin, leaving it soft, smooth and fragrant. Crafted with the finest ingredients and infused with exotic botanical extracts, it provides an opulent bathing ritual.",
@@ -380,7 +382,7 @@
                 "color" : [],
                 "size" : ["20ml","30ml"],
                 "type" : ["20ml","30ml"],
-                "link" : "/en/guest amenities/shover gel",
+                "link" : "/en/guest amenities/shower gel",
                 "img" : ["https://images.pexels.com/photos/3872898/pexels-photo-3872898.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
             },
             "shover cap" : {
@@ -826,7 +828,7 @@
                 "link" : "/en/hotel supplies/hotel reception bell",
                 "img" : ["https://images.pexels.com/photos/3771110/pexels-photo-3771110.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"]
             },
-            "blue laundry trolley 1 basket" : {
+            "bluelaundrytrolley" : {
                 "title": "Blue Laundry Trolley 1 Basket",
                 "category" : "Hotel Supplies",
                 "description" : "The premium Blue laundry trolley is designed to streamline laundry routines with its spacious basket and durable construction, making it an ideal addition to any home or commercial setting.",
@@ -836,7 +838,7 @@
                 "color" : ["White"],
                 "size" : [],
                 "type" : [],
-                "link" : "/en/hotel supplies/blue laundry trolley 1 basket",
+                "link" : "/en/hotel supplies/bluelaundrytrolley",
                 "img" : ["https://azcd.harveynorman.com.au/media/catalog/product/9/3/9357641026632.jpg"]
             },
             "hair dryer" : {
@@ -969,7 +971,7 @@
                 "link" : "/en/hotel supplies/automatic room freshener",
                 "img" : ["https://i.ytimg.com/vi/EQbOvwviT_Y/maxresdefault.jpg"]
             },
-            "bathroom accessory set and bathroom mirror" : {
+            "bathroomaccessorysetandbathroommirror" : {
                 "title": "Bathroom Accessory Set And Bathroom Mirror",
                 "category" : "Hotel Supplies",
                 "description" : "This hotel bathroom accessory set includes a robe hook, toothbrush tumbler, soap stand, bathroom mirror, and towel bar. The robe hook offers a chic and convenient place to hang a robe, while the toothbrush tumbler offers a fashionable storage solution. The soap stand keeps soap close at hand, while the bathroom mirror provides elegance and functionality. The towel bar completes the set, making it a luxurious haven.",
@@ -979,7 +981,7 @@
                 "color" : ["White"],
                 "size" : [],
                 "type" : [],
-                "link" : "/en/hotel supplies/bathroom accessory set and bathroom mirror",
+                "link" : "/en/hotel supplies/bathroomaccessorysetandbathroommirror",
                 "img" : ["https://media.designcafe.com/wp-content/uploads/2022/01/27222104/modern-bathroom-accessories-where-the-mirror-is-essential-for-every-bathroom.jpg"]
             },
             "stand for billboards" : {
@@ -1060,7 +1062,7 @@
                 "link" : "/en/hotel supplies/dustbin steel",
                 "img" : ["https://images.thdstatic.com/productImages/52584221-abd3-493d-a683-75cef0c36335/svn/hls-commercial-trash-receptacles-thdc04g15b-64_1000.jpg"]
             },
-            "barrier column and barrier rope" : {
+            "barriercolumnandbarrierrope" : {
                 "title": "Barrier Column And Barrier Rope",
                 "category" : "Hotel Supplies",
                 "description" : "The 5-star hotel barrier column and rope are sophisticated crowd control elements designed to preserve order and give a sense of exclusivity. The barrier column is composed of high-quality materials, and the rope is made of soft velvet or strong braided rope. They work together to create a physical and visual barrier that adds refinement to the hotel's entrances, event spaces, and VIP zones.",
@@ -1070,7 +1072,7 @@
                 "color" : ["White"],
                 "size" : [],
                 "type" : [],
-                "link" : "/en/hotel supplies/barrier column and barrier rope",
+                "link" : "/en/hotel supplies/barriercolumnandbarrierrope",
                 "img" : ["https://www.dressityourself.co.uk/wp-content/uploads/2020/05/Red-Carpet-with-Rope-and-Pole-3.jpg"]
             },
             "chain lock" : {
@@ -1173,7 +1175,7 @@
             "mattress 01" : {
                 "title": "Mattress Compressed With Topper",
                 "category" : "Mattresses",
-                "description" : "",
+                "description" : "This mattress, which was expertly made using the best materials, provides a cloud-like sleeping experience. The included topper offers an additional layer of plushness, enveloping you in unmatched comfort and guaranteeing that you awaken every morning feeling revived and invigorated.",
                 "fabric" : ["Percale", "Satin"],
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],
@@ -1186,7 +1188,7 @@
             "mattress 02" : {
                 "title": "Mattress Compressed Without Topper",
                 "category" : "Mattresses",
-                "description" : "",
+                "description" : "This mattress completely transforms how you sleep at night thanks to its meticulous design for maximum support and comfort. Every night, drift off to a peaceful realm as you sleep on a surface designed for support and relaxation, fostering restorative sleep and improving general wellbeing.",
                 "fabric" : ["Percale", "Satin"],
                 "design" : ["Plain", "Striped"],
                 "colorCode" : ["#ffffff"],

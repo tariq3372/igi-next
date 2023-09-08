@@ -48,7 +48,10 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
   const SLIDE_COUNT = img.length
   const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
 
-  console.log(dict[category].products[product].category)
+  const category1 = "guest amenities";
+
+  console.log(dict[category].products[product].title)
+  // console.log(Object.keys(dict[category].products[product]))
 
 
   return (
@@ -104,7 +107,122 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
               </div>
               {/* <!-- buttons - end --> */}
 
-              {dict[category].products[product].category == 'Hotel Supplies' || dict[category].products[product].category == 'Mattresses' ? (
+              {/* Weight products */}
+
+              {dict[category].products[product].title == "Body Lotion" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "Shampoo" || dict[category].products[product].title == "الشامبو" || dict[category].products[product].title == "Shower Gel" || dict[category].products[product].title == "جل الإستحمام" ? (
+                <div
+                className='bg-white w-full'
+
+              >
+                <Disclosure>
+                {({ open }) => (
+                /* Use the `open` state to conditionally change the direction of an icon. */
+                <>
+                
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg'}`}>
+                  <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
+                    <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white rounded-b-lg transition-all delay-500">
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+                      
+                      <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.weight}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {size.map((s, i) =>
+                          <div className="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
+                            <p className="text-lg font-semibold">{type[i]}</p>
+                            <div className="text-xs z-40 absolute top-12 left-0 scale-0 rounded bg-white p-1 w-auto text-magic-potion group-hover:scale-100">{s}</div>
+                          </div>
+
+                        )}
+                      </div>
+
+                      {/* <div className="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div> */}
+
+                    </div>
+                  </Disclosure.Panel>
+                  </>
+                  )}
+                  </Disclosure>
+              </div>
+              ) : (<div></div>)}
+
+              {/* Comforter set */}
+
+              {dict[category].products[product].title == "Home comforter set" || dict[category].products[product].title == "مجموعة اللحاف لبمنزلي" ? (
+                <div
+                className='bg-white w-full'
+
+              >
+                <Disclosure>
+                {({ open }) => (
+                /* Use the `open` state to conditionally change the direction of an icon. */
+                <>
+                
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg'}`}>
+                  <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
+                    <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white rounded-b-lg transition-all delay-500">
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+
+                      <div className="col-span-4 text-sm text-alabaster md:text-base">{dict.productCustom}</div>
+
+                    </div>
+                  </Disclosure.Panel>
+                  </>
+                  )}
+                  </Disclosure>
+              </div>
+              ) : (<div></div>)}
+
+              {/* Slippers */}
+
+              {dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال" ? (
+                <div
+                className='bg-white w-full'
+
+              >
+                <Disclosure>
+                {({ open }) => (
+                /* Use the `open` state to conditionally change the direction of an icon. */
+                <>
+                
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg'}`}>
+                  <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
+                    <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white rounded-b-lg transition-all delay-500">
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+
+                      {/* <div className="col-span-4 text-sm text-alabaster md:text-base">{dict.productCustom}</div> */}
+                      <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.size}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {size.map((s, i) =>
+                          <div className="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
+                            <p className="text-lg font-semibold">{type[i]}</p>
+                            <div className="text-xs z-40 absolute top-12 left-0 scale-0 rounded bg-white p-1 w-auto text-magic-potion group-hover:scale-100">{s}</div>
+                          </div>
+
+                        )}
+                      </div>
+
+                    </div>
+                  </Disclosure.Panel>
+                  </>
+                  )}
+                  </Disclosure>
+              </div>
+              ) : (<div></div>)}
+
+              {dict[category].products[product].category == 'Hotel Supplies' || dict[category].products[product].category == 'إمدادات الفنادق' || dict[category].products[product].category == 'Mattresses' || dict[category].products[product].category == 'مراتب' ||
+                dict[category].products[product].title == 'Shover Cap' || dict[category].products[product].title == 'قبعة الاستحمام' || dict[category].products[product].title == 'Shaving Kit' || dict[category].products[product].title == 'أدوات الحلاقة' || dict[category].products[product].title == 'Dental Kit' || dict[category].products[product].title == 'طقم الأسنان' || dict[category].products[product].title == 'Comb' || dict[category].products[product].title == 'المشط' || dict[category].products[product].title == 'Shoe Shine' || dict[category].products[product].title == 'تلميع الأحذية' || dict[category].products[product].title == 'Soap' || dict[category].products[product].title == 'الصابون' ||
+                dict[category].products[product].title == "Body Lotion" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "Shampoo" || dict[category].products[product].title == "الشامبو" || dict[category].products[product].title == "Shower Gel" || dict[category].products[product].title == "جل الإستحمام" ||
+                dict[category].products[product].title == "Home comforter set" || dict[category].products[product].title == "مجموعة اللحاف لبمنزلي" || dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال"
+                ? (
                 <div></div>
               ):(
                 <div
@@ -116,12 +234,12 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
                 /* Use the `open` state to conditionally change the direction of an icon. */
                 <>
                 
-                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg delay-500' : 'rounded-lg transition-all delay-500'}`}>
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg'}`}>
                   <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
                     <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white">
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white rounded-b-lg transition-all delay-500">
                     <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
                       <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.material}</div>
                       <div className="col-span-3 flex flex-wrap gap-2">
@@ -160,7 +278,7 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
                         {size.map((s, i) =>
                           <div className="group relative flex flex-col text-center text-tulip-yellow gap-2 border-2 rounded-lg py-2 px-2 hover:border-tulip-yellow">
                             <p className="text-lg font-semibold">{type[i]}</p>
-                            <div className="text-xs z-40 absolute top-12 left-0 scale-0 rounded bg-white p-1 w-40 text-magic-potion group-hover:scale-100">{s}</div>
+                            <div className="text-xs z-40 absolute top-12 left-0 scale-0 rounded bg-white p-1 w-auto text-magic-potion group-hover:scale-100">{s}</div>
                           </div>
 
                         )}
