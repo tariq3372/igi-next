@@ -109,7 +109,7 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
 
               {/* Weight products */}
 
-              {dict[category].products[product].title == "Body Lotion" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "Shampoo" || dict[category].products[product].title == "الشامبو" || dict[category].products[product].title == "Shower Gel" || dict[category].products[product].title == "جل الإستحمام" ? (
+              {dict[category].products[product].title == "Body Lotion" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "Shampoo" || dict[category].products[product].title == "الشامبو" || dict[category].products[product].title == "Shower Gel" || dict[category].products[product].title == "جل الإستحمام" || dict[category].products[product].title == 'Soap' || dict[category].products[product].title == 'الصابون' ? (
                 <div
                 className='bg-white w-full'
 
@@ -139,6 +139,58 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
                       </div>
 
                       {/* <div className="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div> */}
+
+                    </div>
+                  </Disclosure.Panel>
+                  </>
+                  )}
+                  </Disclosure>
+              </div>
+              ) : (<div></div>)}
+
+              {/* Table Cover & Chair Cover */}
+
+              {dict[category].products[product].title == "Table Cover" || dict[category].products[product].title == "غطاء الطاولة" || dict[category].products[product].title == "Chair Cover" || dict[category].products[product].title == "غطاء الكرسي" ? (
+                <div
+                className='bg-white w-full'
+
+              >
+                <Disclosure>
+                {({ open }) => (
+                /* Use the `open` state to conditionally change the direction of an icon. */
+                <>
+                
+                  <Disclosure.Button className={`bg-magic-potion inline-flex w-full justify-between items-center px-5 py-2  ${open ? 'rounded-t-lg' : 'rounded-lg'}`}>
+                  <h2 className='text-alabaster font-semibold text-md'>{dict.productDetails}</h2>
+                    <AiOutlineUp className={`fill-tulip-yellow w-5 h-5 ${open ? '-rotate-180 transform' : ''}`}
+                    />
+                  </Disclosure.Button>
+                  <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm bg-magic-potion text-white rounded-b-lg transition-all delay-500">
+                    <div className='grid grid-cols-4 px-5 py-7 gap-y-5'>
+                      
+                    <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.material}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {fabric.map((s, i) =>
+                          <div className="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p className="text-lg font-semibold">{fabric[i]}</p>
+                            {i === fabric.length - 1 ? "" : <p className="text-white">|</p>}
+
+                          </div>
+
+                        )}
+                      </div>
+
+                      <div className="col-span-1 text-sm text-alabaster md:text-base">{dict.design}</div>
+                      <div className="col-span-3 flex flex-wrap gap-2">
+                        {design.map((s, i) =>
+                          <div className="group relative flex flex-row text-center text-tulip-yellow gap-2">
+                            <p className="text-lg font-semibold">{design[i]}</p>
+                            {i === design.length - 1 ? "" : <p className="text-white">|</p>}
+                          </div>
+                        )}
+                      </div>
+
+                      <div className="col-span-4 text-sm text-alabaster md:text-base">{dict.productNote}</div>
 
                     </div>
                   </Disclosure.Panel>
@@ -180,7 +232,9 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
 
               {/* Slippers */}
 
-              {dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال" ? (
+              {dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال" || dict[category].products[product].title == "Bed Skirt" || dict[category].products[product].title == "تنورة سرير" || dict[category].products[product].title == "Bed Runner With Pillow" || dict[category].products[product].title == "حلية السرير مع تكايا" 
+              || dict[category].products[product].title == "Blanket" || dict[category].products[product].title == "البطانية"
+              ? (
                 <div
                 className='bg-white w-full'
 
@@ -218,10 +272,14 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
               </div>
               ) : (<div></div>)}
 
+              {/* Remove product details */}
+
               {dict[category].products[product].category == 'Hotel Supplies' || dict[category].products[product].category == 'إمدادات الفنادق' || dict[category].products[product].category == 'Mattresses' || dict[category].products[product].category == 'مراتب' ||
                 dict[category].products[product].title == 'Shover Cap' || dict[category].products[product].title == 'قبعة الاستحمام' || dict[category].products[product].title == 'Shaving Kit' || dict[category].products[product].title == 'أدوات الحلاقة' || dict[category].products[product].title == 'Dental Kit' || dict[category].products[product].title == 'طقم الأسنان' || dict[category].products[product].title == 'Comb' || dict[category].products[product].title == 'المشط' || dict[category].products[product].title == 'Shoe Shine' || dict[category].products[product].title == 'تلميع الأحذية' || dict[category].products[product].title == 'Soap' || dict[category].products[product].title == 'الصابون' ||
                 dict[category].products[product].title == "Body Lotion" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "مرطب الجسم" || dict[category].products[product].title == "Shampoo" || dict[category].products[product].title == "الشامبو" || dict[category].products[product].title == "Shower Gel" || dict[category].products[product].title == "جل الإستحمام" ||
-                dict[category].products[product].title == "Home comforter set" || dict[category].products[product].title == "مجموعة اللحاف لبمنزلي" || dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال"
+                dict[category].products[product].title == "Home comforter set" || dict[category].products[product].title == "مجموعة اللحاف لبمنزلي" || dict[category].products[product].title == "Slippers" || dict[category].products[product].title == "النعال" ||
+                dict[category].products[product].title == "Bed Skirt" || dict[category].products[product].title == "تنورة سرير" || dict[category].products[product].title == "Bed Runner With Pillow" || dict[category].products[product].title == "حلية السرير مع تكايا" || dict[category].products[product].title == "Blanket" || dict[category].products[product].title == "البطانية" ||
+                dict[category].products[product].title == "Table Cover" || dict[category].products[product].title == "غطاء الطاولة" || dict[category].products[product].title == "Chair Cover" || dict[category].products[product].title == "غطاء الكرسي" || dict[category].products[product].title == "Loofah" || dict[category].products[product].title == "الليفة" || dict[category].products[product].title == "Sewing Kit" || dict[category].products[product].title == "طقم أدوات الخياطة"
                 ? (
                 <div></div>
               ):(

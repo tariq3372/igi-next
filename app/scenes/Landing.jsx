@@ -59,7 +59,7 @@ const Landing = ({ dict }) => {
                             download
                             className="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring active:text-rose-500 sm:w-auto"
                         >
-                            {dict.button02}
+                            {dict.button04}
                         </a>
                     </motion.div>
                 </div>

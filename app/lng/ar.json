@@ -1,12 +1,12 @@
 {
 	"lang": "إنجليزي",
 	"langsuffix": "/ar",
-	"home": "بيت",
+	"home": "رئيسي",
 	"companyName": "شركة مصنع عمران الخليج للصناعة",
 	"slogan": "",
 	"button01": "طلب الاستشارة",
 	"button02": "استكشف خدماتنا",
-	"button04": "تنزيل الكتالوج",
+	"button04": "تحميل الكتالوج",
 	"learnMore": "يتعلم أكثر",
 	"viewMore": "عرض المزيد",
 	"about": "عن",
@@ -39,7 +39,7 @@
 	"fabricContent": "استمتع بجاذبية الأقمشة الفخمة، حيث تتشابك فخامة الأناقة مع الشعور بالبهجة. استمتع بعالم من الأنسجة الرائعة والراحة الفائقة التي تتجاوز البياضات العادية.",
 	"fabricTypes": "أنواع الأقمشة ",
 	"fabric01": "خطوط ساتان القطن",
-	"fabric02": "القطن العادي الساتين",
+	"fabric02": "القطن العادي ساتان",
 	"fabric03": "القطن عادي بيركال",
 	"homeCarousel": [{
 			"image": "/411.jpg",
@@ -62,7 +62,7 @@
 	],
 	"bed linen": {
 		"title": "IGI بياضات",
-		"logo": "/igi-linen.jpg",
+		"logo": "/igi-linen.png",
 		"description": "عمران الخليج للصناعة هي شركة معروفة ومتخصصة في إنتاج أغطية السرير عالية الجودة. نحن نقدم تشكيلة شاملة من منتجات أغطية السرير، مثل ملاءات السرير وأغطية الوسائد وأغطية الألحفة والمزيد. تميزنا وتفردنا باستخدام مواد فاخرة وحرفيين موهوبين لإنتاج أغطية سرير متينة ومريحة وجميلة، حيث نراعي الناحية الجمالية أيضاً. تلبي تصميماتنا مجموعة واسعة من الأذواق والتفضيلات، مما يجعل منتجاتنا مناسبة لكل من  الاستخدامات السكنية والتجارية. تتمتع شركة عمران الخليج للصناعة بسمعة طيبة في إنتاج أغطية السرير عالية الجودة التي تجمع بين الأناقة ومناسبتها للغرض وطول العمر.",
 		"products": {
 			"flat bed sheet": {
@@ -86,8 +86,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-				"type": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
+				"size" : ["100 x 200 + 27", "120 x 200 + 27", "180 x 200 + 27", "200 x 200 + 27"],
+                "type" : ["100 x 200 + 27", "120 x 200 + 27", "180 x 200 + 27", "200 x 200 + 27"],
 				"link": "/ar/homes/fitted bed sheet",
 				"img": ["/fittedbs.jpeg", "https://img1.exportersindia.com/product_images/bc-full/2020/6/7394823/fitted-bed-sheet-1591516729-5469637.jpeg"]
 			},
@@ -121,12 +121,12 @@
 				"title": "واقي المرتبة",
 				"category": "بيت",
 				"description": "واقي المرتبة عبارة عن قطعة من الفراش توضع فوق المرتبة. يحافظ على جودة المرتبة ويحميها من البقع ويطيل فترة استخدامها. • القماش المستخدم هو 100% قطن تيري. • طبقة سفلية من البولي يوريثان مقاومة للماء بنسبة 100%. • أشرطة مطاطية عريضة جدًا مقاس 2 بوصة في 4 زوايا من أجل إحكام الغلق. •  قابل للغسل في الغسالة وسهل الصيانة.",
-				"fabric": ["بيركال", "ساتان"],
-				"design": ["ساده", "مقلم"],
+				"fabric" : ["تيري", "بلاستيك"],
+                "design" : [],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-				"type": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
+				"size": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
+				"type": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
 				"link": "/ar/homes/mattress protectors",
 				"img": ["/matress-protector.jpeg"]
 			},
@@ -134,12 +134,12 @@
 				"title": "واقي تغليف المرتبة",
 				"category": "أغطية السرير",
 				"description": "واقي المرتبة هو عبارة عن قطعة يتم تغليفها بالكامل فوق المرتبة لحمايتها. • القماش المستخدم هو قطن تيري 100 قدم. • قماش مقاوم لبق الفراش ومقاوم للماء يغطي المرتبة بأكملها. • سطح أملس مضاد للحساسية وهادئ ولا يغير ملمس المرتبة. • مقاومة للماء بنسبة 100% مع سحاب محكم لا يمسح بمرور الماء  وغطاء مانع للتسرب.",
-				"fabric": ["بيركال", "ساتان"],
-				"design": ["ساده", "مقلم"],
+				"fabric" : ["تيري", "بلاستيك"],
+                "design" : [],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-				"type": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
+				"size": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
+				"type": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
 				"link": "/ar/bed linen/mattress encasement protectors",
 				"img": ["/mattress-encasement-protector.jpeg"]
 			},
@@ -164,8 +164,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
-				"type": ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
+				"size" : ["100 x 200 + 30", "120 x 200 + 30", "180 x 200 + 30", "200 x 200 + 30"],
+                "type" : ["100 x 200 + 30", "120 x 200 + 30", "180 x 200 + 30", "200 x 200 + 30"],
 				"link": "/ar/bed linen/bed skirt",
 				"img": ["/bed-skirt.jpeg", "https://secure.img1-fg.wfcdn.com/im/94276422/compr-r85/2080/208013024/wayfair-basics-1800-series-14-bed-skirt.jpg"]
 			},
@@ -177,8 +177,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["50 x 75", "50 x 90"],
-				"type": ["50 x 75", "50 x 90"],
+				"size" : ["50 x 75", "60 x 90"],
+                "type" : ["50 x 75", "60 x 90"],
 				"link": "/ar/homes/pillow",
 				"img": ["/pillow.jpeg", "https://upload.wikimedia.org/wikipedia/commons/a/ad/Pillows_on_a_hotel_bed.jpg"]
 			},
@@ -190,8 +190,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["50 x 75", "50 x 90"],
-				"type": ["50 x 75", "50 x 90"],
+				"size" : ["50 x 75", "60 x 90"],
+                "type" : ["50 x 75", "60 x 90"],
 				"link": "/ar/bed linen/pillow cases",
 				"img": ["https://m.media-amazon.com/images/I/51AmxIXD1RL.jpg", "https://m.media-amazon.com/images/I/61qXIsijgpL._AC_UF1000,1000_QL80_.jpg"]
 			},
@@ -200,7 +200,7 @@
 				"category": "بيت",
 				"description": "متوفر بنسيج بولي قطن تيري فائق النعومة بنسبة ٪١٠٠ مقاوم للماء ومغطى بالبولي يوريثان. سهل الإزالة والغسل. إغلاق بسحاب لمزيد من الأمان والراحة. معالج ضد عث الغبار والميكروبات.",
 				"fabric": ["بيركال", "ساتان"],
-				"design": ["ساده", "مقلم"],
+				"design": [],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
 				"size": ["50 x 75", "50 x 90"],
@@ -218,8 +218,8 @@
 				"color": ["أبيض"],
 				"size": ["1.3 KG", "3 KG", "4 KG"],
 				"type": ["1.3 KG", "3 KG", "4 KG"],
-				"link": "/ar/bed linen/blanket",
-				"img": ["https://images.pexels.com/photos/9788329/pexels-photo-9788329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1", "https://images.unsplash.com/photo-1584969404909-266c201ad383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
+				"link": "/ar/homes/blanket",
+				"img" : ["https://m.media-amazon.com/images/I/915CXUMPbWL.jpg", "https://www.curatedbyjw.com/images/products/v2/lrg/curatedbyjw-down-comforter-jw-112_lrg.jpg"]
 			},
 			"table cover": {
 				"title": "غطاء الطاولة",
@@ -367,8 +367,8 @@
 				"design": [""],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": [],
-				"type": [],
+				"size" : ["15 gm", "20 gm", "25 gm"],
+                "type" : ["15 gm", "20 gm", "25 gm"],
 				"link": "/ar/guest amenities/soap",
 				"img": ["/soap.png"]
 			},
@@ -500,12 +500,12 @@
 				"title": "واقي المرتبة",
 				"category": "بيت",
 				"description": "واقي المرتبة عبارة عن قطعة من الفراش توضع فوق المرتبة. يحافظ على جودة المرتبة ويحميها من البقع ويطيل فترة استخدامها. • القماش المستخدم هو 100% قطن تيري. • طبقة سفلية من البولي يوريثان مقاومة للماء بنسبة 100%. • أشرطة مطاطية عريضة جدًا مقاس 2 بوصة في 4 زوايا من أجل إحكام الغلق. •  قابل للغسل في الغسالة وسهل الصيانة.",
-				"fabric": ["بيركال", "ساتان"],
-				"design": ["ساده", "مقلم"],
+				"fabric" : ["تيري", "بلاستيك"],
+                "design" : [],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
-				"type": ["100 x 200 x 30", "120 x 200 x 30", "160 x 200 x 30", "200 x 200 x 30"],
+				"size": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
+				"type": ["100 x 200 + 30", "120 x 200 + 30", "160 x 200 + 30", "200 x 200 + 30"],
 				"link": "/ar/homes/mattress protectors",
 				"img": ["/matress-protector.jpeg"]
 			},
@@ -517,8 +517,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["50 x 75", "50 x 90"],
-				"type": ["50 x 75", "50 x 90"],
+				"size" : ["50 x 75", "60 x 90"],
+                "type" : ["50 x 75", "60 x 90"],
 				"link": "/ar/homes/pillow",
 				"img": ["https://images.unsplash.com/photo-1445991842772-097fea258e7b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"]
 			},
@@ -526,14 +526,27 @@
 				"title": "واقي الوسادة",
 				"category": "بيت",
 				"description": "متوفر بنسيج بولي قطن تيري فائق النعومة بنسبة ١٠٠ مقاوم للماء ومغطى بالبولي يوريثان. سهل الإزالة والغسل. إغلاق بسحاب لمزيد من الأمان والراحة. معالج ضد عث الغبار والميكروبات..",
+				"fabric": ["تيري", "بلاستيك"],
+				"design": [],
+				"colorCode": ["#ffffff"],
+				"color": ["أبيض"],
+				"size" : ["50 x 75", "60 x 90"],
+                "type" : ["50 x 75", "60 x 90"],
+				"link": "/ar/homes/pillow protectors",
+				"img": ["/pillow-protector.jpeg"]
+			},
+			"blanket": {
+				"title": "البطانية",
+				"category": "أغطية السرير",
+				"description": "استمتع بالفخامة والراحة التي لا مثيل لها مع بطانية الكتان ذات الجودة الخمس نجوم، والتي تم تصميمها بخبرة بواسطة عمران الخليج للصناعة. حيث الملمس الفخم، والدفء الفائق، والتصميم الرفيع يرتقي بمجموعة الفراش الخاصة بك، ويتيح لك التمتع  بالرقي والراحة معاً.",
 				"fabric": ["بيركال", "ساتان"],
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["50 x 75", "50 x 90"],
-				"type": ["50 x 75", "50 x 90"],
-				"link": "/ar/homes/pillow protectors",
-				"img": ["/pillow-protector.jpeg"]
+				"size": ["1.3 KG", "3 KG", "4 KG"],
+				"type": ["1.3 KG", "3 KG", "4 KG"],
+				"link": "/ar/homes/blanket",
+				"img" : ["https://m.media-amazon.com/images/I/915CXUMPbWL.jpg", "https://www.curatedbyjw.com/images/products/v2/lrg/curatedbyjw-down-comforter-jw-112_lrg.jpg"]
 			},
 			"duvet covers": {
 				"title": "أغطية اللحاف",
@@ -556,10 +569,10 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-				"type": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
+				"size" : ["100 x 200 + 27", "120 x 200 + 27", "180 x 200 + 27", "200 x 200 + 27"],
+                "type" : ["100 x 200 + 27", "120 x 200 + 27", "180 x 200 + 27", "200 x 200 + 27"],
 				"link": "/ar/homes/fitted bed sheet",
-				"img": ["/fittedbs.jpeg", "https://img1.exportersindia.com/product_images/bc-full/2020/6/7394823/fitted-bed-sheet-1591516729-5469637.jpeg"]
+				"img": ["https://m.media-amazon.com/images/I/71pVM0WswCL.jpg","/fittedbs.jpeg"]
 			},
 			"mattress topper": {
 				"title": "توبر لباد",
@@ -569,8 +582,8 @@
 				"design": ["ساده", "مقلم"],
 				"colorCode": ["#ffffff"],
 				"color": ["أبيض"],
-				"size": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
-				"type": ["100 x 260 x 27", "100 x 260 x 27", "160 x 200 x 27", "200 x 200 x 27"],
+				"size": ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
+				"type": ["100 x 200", "120 x 200", "180 x 200", "200 x 200"],
 				"link": "/ar/homes/mattress topper",
 				"img": ["/mattress-topper.jpeg"]
 			}
@@ -734,9 +747,9 @@
 				"size": [],
 				"type": [],
 				"link": "/ar/hotel supplies/podium",
-				"img": ["https://www.restaurantfurnitureindia.com/img/products/restaurant-furnitures/podium/wooden-podium.jpg"]
+				"img": ["https://sc04.alicdn.com/kf/Hef9a7a9ddbbc4d29ac3dc08729fddbd3V.jpg"]
 			},
-			"multi purpose cleaning cart": {
+			"multipurposecleaningcart": {
 				"title": "عربة تنظيف متعددة الأغراض",
 				"category": "إمدادات الفنادق",
 				"description": "تعد عربة التنظيف المتميزة متعددة الأغراض التي توفرها الشركة حلاً متعدد الاستخدامات وفعالاً لجميع احتياجات التنظيف الخاصة بكم. تحتوي على مساحة تخزين كبيرة وأرفف قابلة للتعديل وحوامل مدمجة لمعدات التنظيف المختلفة. تصميم العربة المتين وخفتها وسهولة حركتها يجعلها أداة لا غنى عنها لعمال النظافة المحترفين، مما يسمح بسهولة الحركة والتنظيف الفعال في أي موقف.",
@@ -746,10 +759,10 @@
 				"color": ["أبيض"],
 				"size": [],
 				"type": [],
-				"link": "/ar/hotel supplies/multi purpose cleaning cart",
+				"link": "/ar/hotel supplies/multipurposecleaningcart",
 				"img": ["https://acooker.com/wp-content/uploads/2020/05/AF08173.jpg"]
 			},
-			"two tub cleaning cart": {
+			"twotubcleaningcart": {
 				"title": "عربة تنظيف بحوضين",
 				"category": "إمدادات الفنادق",
 				"description": "تم تصميم عربة التنظيف المتميزة ذات الحوضين لتحقيق أقصى قدر من الكفاءة والراحة، وتتميز بهيكل قوي وتصميم مريح لنقل وتنظيم أدوات التنظيف أثناء معالجة العديد من المهام في وقت واحد.",
@@ -759,10 +772,10 @@
 				"color": ["أبيض"],
 				"size": [],
 				"type": [],
-				"link": "/ar/hotel supplies/two tub cleaning cart",
+				"link": "/ar/hotel supplies/twotubcleaningcart",
 				"img": ["https://upload.wikimedia.org/wikipedia/commons/7/7f/MopWringer-45.jpg"]
 			},
-			"single tub cleaning cart": {
+			"singletubcleaningcart": {
 				"title": "عربة تنظيف ذات حوض واحد",
 				"category": "إمدادات الفنادق",
 				"description": "تم تصميم عربة التنظيف المتميزة ذات الحوض الواحد لتبسيط ورفع إجراءات التنظيف من خلال بنيتها القوية وسهولة استخدامها. توفر مساحة تخزين واسعة وعجلات متينة لسهولة الحركة، مما يجعلها مثالية للاستخدام التجاري أو السكني.",
@@ -772,7 +785,7 @@
 				"color": ["أبيض"],
 				"size": [],
 				"type": [],
-				"link": "/ar/hotel supplies/single tub cleaning cart",
+				"link": "/ar/hotel supplies/singletubcleaningcart",
 				"img": ["https://m.media-amazon.com/images/I/61RYtnV1cqL.jpg"]
 			},
 			"shoe polishing machine": {
@@ -825,7 +838,7 @@
 				"size": [],
 				"type": [],
 				"link": "/ar/hotel supplies/bluelaundrytrolley",
-				"img": ["https://azcd.harveynorman.com.au/media/catalog/product/9/3/9357641026632.jpg"]
+				"img": ["https://avnt.co.in/images/trolley/solid-linen-trolley.jpg"]
 			},
 			"hair dryer": {
 				"title": "مجفف شعر",
@@ -840,7 +853,7 @@
 				"link": "/ar/hotel supplies/hair dryer",
 				"img": ["https://i.insider.com/598359aa8754331f4009ca0b?width=1200&format=jpeg"]
 			},
-			"kettle+tray+2 cups": {
+			"kettletraycups": {
 				"title": "غلاية + صينية + 2 أكواب",
 				"category": "إمدادات الفنادق",
 				"description": "تتميز المجموعة المتميزة بغلاية أنيقة وصينية أنيقة وكوبين رائعين. الغلاية مصنوعة من الفولاذ المقاوم للصدأ عالي الجودة وتغلي الماء بدقة، بينما تضيف الصينية المطابقة لمسة من الرقي.  كما أن الأكواب تكمل المجموعة بشكل مثالي.",
@@ -850,7 +863,7 @@
 				"color": ["أبيض"],
 				"size": [],
 				"type": [],
-				"link": "/ar/hotel supplies/kettle+tray+2 cups",
+				"link": "/ar/hotel supplies/kettletraycups",
 				"img": ["/kettle-tray.jpeg"]
 			},
 			"weight scale": {
@@ -1185,7 +1198,7 @@
 			}
 		}
 	},
-	"contact": "اتصال",
+	"contact": "اتصل بنا",
 	"contactInfo": "تخطط لوضع طلب كبير؟",
 	"contactContent": "تلقي اقتباسك المجاني",
 	"contactName": "اسم",
