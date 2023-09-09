@@ -10,16 +10,17 @@ import Router from 'next/router'
 
 export default function Home(props) {
 
-  const router = useRouter()
-  useEffect(() => {
-    const handleRouteChange = url => {
-      gtag.pageview(url)
-    }
-    router.events.on("routeChangeComplete", handleRouteChange)
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange)
-    }
-  }, [router.events])
+  // const router = useRouter()
+  // useEffect(() => {
+  //   const handleRouteChange = url => {
+  //     gtag.pageview(url)
+  //   }
+  //   // router.events.on("routeChangeComplete", handleRouteChange)
+  //   router.events.on("routeChangeComplete", handleRouteChange)
+  //   return () => {
+  //     router.events.off("routeChangeComplete", handleRouteChange)
+  //   }
+  // }, [router.events])
 
   useEffect(() => {
     const { pathname } = Router
