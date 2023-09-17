@@ -15,11 +15,12 @@ import { Disclosure } from '@headlessui/react'
 import Link from 'next/link';
 
 
-const EachProducts = ({ params: { lang, category, product }, href }) => {
+const EachProducts = ({ params: { lang, category, product }}) => {
 
-  category = category.replace("%20", " ");
-  product = product.replace("%20", " ").replace("%20", " ");
+  category = category.replaceAll("%20", " ");
+  product = product.replaceAll("%20", " ");
   const dict = GetDictionary(lang);
+  console.log(dict[category]);
 
   const [open, setOpen] = useState(false);
   const toggle = () => {
@@ -32,7 +33,6 @@ const EachProducts = ({ params: { lang, category, product }, href }) => {
 
   }
 
-  console.log(href)
 
   const fabric = dict[category].products[product].fabric;
   const design = dict[category].products[product].design;

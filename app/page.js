@@ -1,37 +1,36 @@
 "use client"
 
 import Script from "next/script"
-// import { useRouter } from "next/router"
 import * as gtag from "./gtag"
 
-import { useRouter } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { useEffect } from 'react'
-import Router from 'next/router'
+// import Router from 'next/router'
 
 export default function Home(props) {
 
   const router = useRouter()
-  useEffect(() => {
-    const handleRouteChange = url => {
-      gtag.pageview(url)
-    }
-    router.events.on("routeChangeComplete", handleRouteChange)
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange)
-    }
-  }, [router.events])
+  const pathname= usePathname()
+  // useEffect(() => {
+  //   const handleRouteChange = url => {
+  //     gtag.pageview(url)
+  //   }
+  //   Router.events.on("routeChangeComplete", handleRouteChange)
+  //   return () => {
+  //     Router.events.off("routeChangeComplete", handleRouteChange)
+  //   }
+  // }, [Router.events])
 
   useEffect(() => {
-    const { pathname } = Router
     if (pathname == '/') {
-      Router.push('/login');
+      router.push('/en');
     }
-  }, [props]);
+  }, [pathname, router]);
   
   return (
     <>
     {/* <!-- Google tag (gtag.js) --> */}
-    <Script
+    {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
       />
@@ -48,7 +47,7 @@ export default function Home(props) {
             });
           `,
         }}
-      />
+      /> */}
     </>
   )
 }
