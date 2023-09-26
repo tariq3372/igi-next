@@ -86,7 +86,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     >
                         <img
                             alt="First Product"
-                            className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[450px] max-w-[550px] md:max-w-[280px] md:max-w-[800px]"
+                            className="object-cover group-hover:scale-110 transition duration-500 ease-in-out z-10 w-full max-w-[450px] md:max-w-[800px]"
                             src="/roomkeeping-man.jpg"
                         />
                     </div>

@@ -152,12 +152,6 @@ const Product = ({ products, productsContent, lang }) => {
                   <ProductSlider slides={SLIDES2} images={img2} titles={title02} links={link02} />
                 </div>
 
-                <div className='ml-0 mr-0 max-w-full lg:w-full'>
-                <div className="">
-                  <ProductSlider slides={SLIDES2} images={img2} titles={title02} links={link02} />
-                </div>
-                </div>
-
                 <Link href={dict.langsuffix+"/guest amenities"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
                     <h2 className="text-right mr-4">{dict.viewMore}</h2>

@@ -27,7 +27,7 @@ const DCarousel = ({ dict, autoSlide = true }) => {
   }, [currentSlide, autoSlide]);
 
   return (
-    <div
+    <section
       id="home"
       className="min-w-full lg:min-h-screen relative group snap-x snap-mandatory"
     >
@@ -41,7 +41,7 @@ const DCarousel = ({ dict, autoSlide = true }) => {
           className="slide-img w-full py-60 lg:py-60 font-serif px-[60px] lg:px-[350px] slides"
           style={{
             transform: 'translateX(0%)',
-            transition: 'transform 0.5s ease-in-out',
+            transition: 'transform 0.5s ease',
           }}
         >
           <div className="bg-black/25 p-6 md:px-10 md:py-10 rounded-xl text-white">
@@ -64,13 +64,30 @@ const DCarousel = ({ dict, autoSlide = true }) => {
       </div>
 
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] left-5 p-2 bg-black/20 rounded-full cursor-pointer">
-        <AiOutlineArrowLeft onClick={prevSlide} width={40} />
+        <AiOutlineArrowLeft className='fill-white' onClick={prevSlide} width={400} />
       </div>
       <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 -translate-y-[-50%] right-5 p-2 bg-black/20 rounded-full cursor-pointer">
-        <AiOutlineArrowRight onClick={nextSlide} width={40} />
+        <AiOutlineArrowRight className='fill-white' onClick={nextSlide} width={400} />
       </div>
 
-    </div>
+      <div className="absolute bottom-4 left-0 right-0">
+        <div className="flex items-center justify-center gap-6">
+          {c.map((_, i) => (
+            <div
+              key={i}
+              onClick={() => {
+                setCurrentSlide(i);
+              }}
+              className={`
+                transition-all w-10 h-1 bg-white  cursor-pointer
+                ${currentSlide === i ? 'p-1' : 'bg-opacity-40'}
+              `}
+            ></div>
+          ))}
+        </div>
+        </div>
+
+    </section>
   );
 };
 
