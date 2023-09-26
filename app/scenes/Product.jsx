@@ -10,6 +10,7 @@ import EmblaCarousel from '../components/slideToScroll/EmblaCarousel'
 
 import {AiOutlineRight, AiOutlineDown} from 'react-icons/ai'
 import GetDictionary from '../utils/dictionaries'
+import ProductSlider from '../components/ProductSlider'
 
 
 const Product = ({ products, productsContent, lang }) => {
@@ -102,12 +103,12 @@ const Product = ({ products, productsContent, lang }) => {
                 <div className="mb-5">
                     <Link href={dict.langsuffix+"/bed linen"}>
                     <div className="w-full mb-2 lg:mb-0 flex flex-row flex-wrap items-center">
-                        <div className='flex flex-row gap-4 w-2/4 lg:w-2/12'>
+                        <div className='flex flex-row gap-4 w-3/4 lg:w-3/12'>
                             <img className='w-10' src={dict['bed linen'].logo} alt="logo" />
                             <h1 className="sm:text-xl text-lg font-medium title-font mb-2 text-gray-900 underline underline-offset-8">{dict['bed linen'].title}</h1>
                         </div>
                         
-                        <div className="h-0.5 w-2/4 lg:w-8/12 bg-gray-400 rounded"></div>
+                        <div className="h-0.5 w-1/4 lg:w-7/12 bg-gray-400 rounded"></div>
                         <div className='hidden md:flex md:flex-row items-center justify-end w-1/4 lg:w-2/12'>
                         <h2 className="text-right mr-4">{dict.viewMore}</h2>
                         <AiOutlineRight />
@@ -115,9 +116,9 @@ const Product = ({ products, productsContent, lang }) => {
                     </div>
                     </Link>
                 </div>
-                <div className='sandbox01'>
-                <div className="sandbox01__carousel">
-                  <EmblaCarousel slides={SLIDES1} options={OPTIONS} images={img1} titles={title01} links={link01} />
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES1} images={img1} titles={title01} links={link01} />
                 </div>
 
                 <Link href={dict.langsuffix+"/bed linen"}>
@@ -146,9 +147,15 @@ const Product = ({ products, productsContent, lang }) => {
                     </Link>
                 </div>
 
-                <div className='sandbox01'>
-                <div className="sandbox01__carousel">
-                  <EmblaCarousel slides={SLIDES2} options={OPTIONS} images={img2} titles={title02} links={link02} />
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES2} images={img2} titles={title02} links={link02} />
+                </div>
+
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES2} images={img2} titles={title02} links={link02} />
+                </div>
                 </div>
 
                 <Link href={dict.langsuffix+"/guest amenities"}>
@@ -178,11 +185,12 @@ const Product = ({ products, productsContent, lang }) => {
                     </Link>
                 </div>
 
-                <div className='sandbox01'>
-                <div className="sandbox01__carousel">
-                  <EmblaCarousel slides={SLIDES3} options={OPTIONS} images={img3} titles={title03} links={link03} />
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES3} images={img3} titles={title03} links={link03} />
                 </div>
                 </div>
+                
 
                 <Link href={dict.langsuffix+"/homes"}>
                 <div className='py-5 flex flex-row items-center justify-center w-full md:hidden'>
@@ -211,9 +219,9 @@ const Product = ({ products, productsContent, lang }) => {
                     </Link>
                 </div>
 
-                <div className='sandbox01'>
-                <div className="sandbox01__carousel">
-                  <EmblaCarousel slides={SLIDES4} options={OPTIONS} images={img4} titles={title04} links={link04} />
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES4} images={img4} titles={title04} links={link04} />
                 </div>
                 </div>
 
@@ -244,9 +252,9 @@ const Product = ({ products, productsContent, lang }) => {
                     </Link>
                 </div>
 
-                <div className='sandbox01'>
-                <div className="sandbox01__carousel">
-                  <EmblaCarousel slides={SLIDES5} options={OPTIONS} images={img5} titles={title05} links={link05} />
+                <div className='ml-0 mr-0 max-w-full lg:w-full'>
+                <div className="">
+                  <ProductSlider slides={SLIDES5} images={img5} titles={title05} links={link05} />
                 </div>
                 </div>
 

@@ -43,22 +43,25 @@
     "fabric03": "Cotton Plain Percale",
     "homeCarousel": [
         {
+            "id": 0,
             "image": "/411.jpg",
             "heading": "IMRAN GULF INDUSTRIES. F. CO",
             "desc": "Experience the luxury of premium quality with IGI. The trusted source for hotels and home utility linen made with world class fabrics",
-            "id": "#about"
+            "redirect": "#about"
         },
         {
+            "id": 1,
             "image": "/bg-02.jpg",
             "heading": "100% World Class Fabric",
             "desc": "Experience the opulent allure of fabrics, where lavish elegance intertwines with a blissful embrace.",
-            "id": "#fabrics"
+            "redirect": "#fabrics"
         },
         {
+            "id": 2,
             "image": "/hero.jpg",
             "heading": "Factory-Direct Source",
             "desc": "Every order and customer request, large or small, is handled with timely offer and suggestion.",
-            "id": "#offering"
+            "redirect": "#offering"
         }
     ],
     "bed linen" : {
