@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from 'framer-motion';
 import SocialMediaIcons from '../components/SocialMediaIcons';
+import Link from 'next/link';
 
 
 const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }) => {
@@ -41,25 +42,25 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false}}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.45 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }
                     }}
                 >
-                    <a
+                    <Link
                         href="#products"
-                        className="block w-full rounded-full bg-tulip-yellow px-12 py-3 text-sm font-medium text-white shadow hover:bg-mettalic-gold focus:outline-none focus:ring active:bg-rose-500 sm:w-auto"
+                        className="block w-full rounded-full bg-tulip-yellow px-12 py-3 text-sm font-medium text-white shadow hover:bg-mettalic-gold focus:outline-none focus:ring sm:w-auto"
                     >
                         {button03}
-                    </a>
+                    </Link>
 
-                    <a
+                    <Link
                         href="#services"
-                        className="block w-full rounded-full bg-satin-linen px-12 py-3 text-sm font-bold text-magic-potion/80 border-2 border-magic-potion shadow hover:bg-magic-potion hover:border-tulip-yellow hover:text-tulip-yellow focus:outline-none focus:ring active:text-rose-500 sm:w-auto"
+                        className="block w-full rounded-full bg-satin-linen px-12 py-3 text-sm font-bold text-magic-potion/80 border-2 border-magic-potion shadow hover:bg-magic-potion hover:border-tulip-yellow hover:text-tulip-yellow focus:outline-none focus:ring sm:w-auto"
                     >
                         {button02}
-                    </a>
+                    </Link>
                 </motion.div>
 
                 <motion.div 
@@ -67,7 +68,7 @@ const About = ({ setSelectedPage, aboutTitle, aboutContent, button02, button03 }
                     initial="hidden"
                     whileInView="visible"
                     viewport={{ once: false, amount: 0.5 }}
-                    transition={{ duration: 0.9 }}
+                    transition={{ duration: 0.6 }}
                     variants={{
                         hidden: { opacity: 0, x: -50 },
                         visible: { opacity: 1, x: 0 }

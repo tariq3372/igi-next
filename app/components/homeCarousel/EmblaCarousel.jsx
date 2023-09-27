@@ -52,7 +52,7 @@ const EmblaCarousel = (props) => {
                       <h1 className='text-lg md:text-xl lg:text-4xl font-semibold text-center mb-2.5 lg:mb-4 font-sans'>{info[index % info.length].heading}</h1>
                       <p className='text-xs md:text-md lg:text-md lg:text-lg font-montserrat  font-normal mb-2.5 lg:mb-5'>{info[index % info.length].desc}</p>
                       <div className="w-full flex place-content-center">
-                        <Link href={info[index % info.length].id} className='text-sm md:text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >{learn}</Link>
+                        <Link href={info[index % info.length].redirect} className='text-sm md:text-md py-1 px-3 lg:px-5 lg:py-1 text-magic-potion bg-white border-magic-potion border-2 rounded-full justify-center block place-content-center' >{learn}</Link>
                       </div>
                     </div>
                   </div>

@@ -10,6 +10,9 @@ import Footer from "../components/Footer";
 import Fabric from "../scenes/Fabric";
 import ContactSection from "../scenes/ContactSection";
 import DCarousel from "../scenes/Carousel";
+import About1 from "../scenes/About1";
+import Landing1 from "../scenes/Landing1";
+import HomeCarousel from "../scenes/homeCarousel";
 
 export default function Page({ params: { lang } }) {
   const dict = GetDictionary(lang) // en
@@ -19,7 +22,10 @@ export default function Page({ params: { lang } }) {
   return (
     <div className='font-montserrat'>
       <Navbar selectedPage={selectedPage} setSelectedPage={setSelectedPage} home={dict.home} about={dict.about} products={dict.products} contact={dict.contact} services={dict.services} lang={lang} />
-      <DCarousel dict={dict} />
+      <HomeCarousel dict={dict} />
+      {/* <About1 setSelectedPage={setSelectedPage} aboutTitle={dict.aboutTitle}
+        aboutContent={dict.aboutContent}
+        button02={dict.button02} button03={dict.button03} /> */}
       <About setSelectedPage={setSelectedPage} aboutTitle={dict.aboutTitle}
         aboutContent={dict.aboutContent}
         button02={dict.button02} button03={dict.button03} />

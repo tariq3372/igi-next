@@ -1,10 +1,11 @@
 "use client"
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 const Landing = ({ dict }) => {
     return (
         <div>
             <section id='services'
-                className="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-center bg-no-repeat bg-fixed"
+                className="h-[75vh] lg:min-h-screen relative bg-hero-image bg-cover bg-no-repeat"
             >
                 <div
                     className="absolute inset-0 bg-black/25"
@@ -54,13 +55,13 @@ const Landing = ({ dict }) => {
                             visible: { opacity: 1, x: 0 }
                         }}
                     >
-                        <a
+                        <Link
                             href="/catalog.pdf"
                             download
-                            className="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring active:text-rose-500 sm:w-auto"
+                            className="block w-full rounded-full bg-white px-5 py-3 text-sm font-medium text-magic-potion border-2 border-magic-potion hover:border-toddy-gold shadow hover:text-toddy-gold focus:outline-2 focus:ring sm:w-auto"
                         >
                             {dict.button04}
-                        </a>
+                        </Link>
                     </motion.div>
                 </div>
             </section>
